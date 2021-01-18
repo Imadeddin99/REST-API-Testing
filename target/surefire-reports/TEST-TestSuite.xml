@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="2.31" tests="8" errors="0" skipped="0" failures="2">
+<testsuite name="TestSuite" time="1.515" tests="12" errors="0" skipped="0" failures="1">
   <properties>
     <property name="idea.version" value="2020.3.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -58,10 +58,14 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="validPostTest" classname="POSTTest" time="0.199"/>
-  <testcase name="InvalidIdPostTest" classname="POSTTest" time="0.408"/>
-  <testcase name="RepeatedIDPostTest" classname="POSTTest" time="0.163"/>
-  <testcase name="InvalidNamePostTest" classname="POSTTest" time="0.1">
+  <testcase name="TestGETWithNumbersInrangeOfSalaries" classname="GETTest" time="0.148"/>
+  <testcase name="TestGETWithNumbersOutrangeOfSalariesAbove" classname="GETTest" time="0.047"/>
+  <testcase name="TestGETWithNumbersOutrangeOfSalariesLess" classname="GETTest" time="0.022"/>
+  <testcase name="test1" classname="GETTest" time="0.031"/>
+  <testcase name="validPostTest" classname="POSTTest" time="0.218"/>
+  <testcase name="InvalidIdPostTest" classname="POSTTest" time="0.186"/>
+  <testcase name="RepeatedIDPostTest" classname="POSTTest" time="0.165"/>
+  <testcase name="InvalidNamePostTest" classname="POSTTest" time="0.078">
     <failure message="expected:&lt;ERROR&gt; but was:&lt;SUCCESS&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<ERROR> but was:<SUCCESS>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
@@ -73,19 +77,8 @@
     <system-out>{"status" : "SUCCESS", "message" : "New employee is added successfully."}
 </system-out>
   </testcase>
-  <testcase name="testingDeleteWithID" classname="DeleteTest" time="0.084">
-    <failure message="expected:&lt;1&gt; but was:&lt;2&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<1> but was:<2>
-	at org.testng.Assert.fail(Assert.java:89)
-	at org.testng.Assert.failNotEquals(Assert.java:489)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:365)
-	at org.testng.Assert.assertEquals(Assert.java:375)
-	at DeleteTest.testingDeleteWithID(DeleteTest.java:61)
-]]></failure>
-    <system-out>{"status" : "SUCCESS", "message" : "Employee with id 438745745094 is deleted successfully."}
-</system-out>
-  </testcase>
-  <testcase name="testingDeleteAll" classname="DeleteTest" time="0.101"/>
-  <testcase name="testingDeleteAllEmpty" classname="DeleteTest" time="0.131"/>
-  <testcase name="testingDeleteWithdoesntExistID" classname="DeleteTest" time="1.124"/>
+  <testcase name="testingDeleteWithID" classname="DeleteTest" time="0.224"/>
+  <testcase name="testingDeleteAll" classname="DeleteTest" time="0.122"/>
+  <testcase name="testingDeleteAllEmpty" classname="DeleteTest" time="0.14"/>
+  <testcase name="testingDeleteWithdoesntExistID" classname="DeleteTest" time="0.134"/>
 </testsuite>
