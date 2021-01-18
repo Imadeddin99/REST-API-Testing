@@ -1,0 +1,20 @@
+{
+  "maxSalary": 10000,
+  "totalSalaries": 15000,
+  "employeesCount": 2,
+  "minSalary": 5000,
+  "items": [
+    {
+      "firstName": "Blaise",
+      "lastName": "Pascal",
+      "id": "438745745094",
+      "salary": 10000
+    },
+    {
+      "firstName": "John",
+      "lastName": "Smith",
+      "id": "438768422146",
+      "salary": 5000
+    }
+  ]
+}

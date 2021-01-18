@@ -1,0 +1,12 @@
+{
+  "maxSalary": 5000,
+  "totalSalaries": 5000,
+  "employeesCount": 1,
+  "minSalary": 5000,
+  "items": [{
+    "firstName": "John",
+    "lastName": "Smith",
+    "id": "438768422146",
+    "salary": 5000
+  }]
+}

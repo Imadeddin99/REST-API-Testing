@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite1]" verbose="0">
+  <test parallel="none" name="Nopackage(failed)" preserve-order="true">
+    <classes>
+      <class name="DeleteTest">
+        <methods>
+          <include name="setData"/>
+          <include name="testingDeleteWithID"/>
+        </methods>
+      </class>
+      <class name="POSTTest">
+        <methods>
+          <include name="setData"/>
+          <include name="InvalidNamePostTest"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
