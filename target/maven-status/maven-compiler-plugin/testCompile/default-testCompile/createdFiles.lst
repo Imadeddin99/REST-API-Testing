@@ -1,4 +1,5 @@
 GETTest.class
+PUTTest.class
 DeleteTest.class
 POSTTest.class
 CommonClass.class

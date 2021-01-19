@@ -1,0 +1,25 @@
+[
+  {
+    "firstName": "Imad",
+    "lastName": "Salama",
+    "id": "1",
+    "salary": 10000
+  },
+  {
+    "firstName": "John",
+    "lastName": "Smith",
+    "id": "2",
+    "salary": 5000
+  },
+  {
+    "firstName": "Blaise",
+    "lastName": "Pascal",
+    "id": "3",
+    "salary": 10000
+  },{
+  "firstName": "Test",
+  "lastName": "Test",
+  "id": "4",
+  "salary": 50000
+}
+]

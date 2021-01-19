@@ -2,8 +2,7 @@ import org.json.JSONException;
 import org.json.simple.JSONObject;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.json.simple.parser.JSONParser;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -36,7 +35,12 @@ public class GETTest {
     }
 
 
-
+    @BeforeMethod
+    @AfterMethod
+    public void setData() throws IOException {
+        CommonClass.deleteAll();
+        CommonClass.postAll();
+    }
     public String sendGetRequest(String Url) throws IOException {
         URL url = new URL(Url);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();

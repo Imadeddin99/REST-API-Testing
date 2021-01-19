@@ -1,22 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Suite1]" verbose="0">
-  <test parallel="none" name="REST API POST Test(failed)" preserve-order="true">
+  <test parallel="none" name="REST API PUT Test(failed)" preserve-order="true">
     <classes>
+      <class name="PUTTest">
+        <methods>
+          <include name="updateOnMaxSalaryByUpdatingEmployee"/>
+          <include name="setData"/>
+          <include name="updateOnMinSalaryByUpdatingEmployee"/>
+        </methods>
+      </class>
       <class name="GETTest">
         <methods>
           <include name="readData"/>
+          <include name="setData"/>
+        </methods>
+      </class>
+      <class name="DeleteTest">
+        <methods>
+          <include name="setData"/>
+        </methods>
+      </class>
+      <class name="POSTTest">
+        <methods>
+          <include name="setData"/>
+          <include name="setDataAfterTest"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test parallel="none" name="REST API POST Test(failed)" preserve-order="true">
+    <classes>
+      <class name="PUTTest">
+        <methods>
+          <include name="setData"/>
+        </methods>
+      </class>
+      <class name="GETTest">
+        <methods>
+          <include name="readData"/>
+          <include name="setData"/>
+        </methods>
+      </class>
+      <class name="DeleteTest">
+        <methods>
+          <include name="setData"/>
         </methods>
       </class>
       <class name="POSTTest">
         <methods>
           <include name="setData"/>
           <include name="InvalidNamePostTest"/>
-        </methods>
-      </class>
-      <class name="DeleteTest">
-        <methods>
-          <include name="setData"/>
+          <include name="setDataAfterTest"/>
+          <include name="addManyEmployeesTest"/>
+          <include name="InvalidIDPostTest"/>
         </methods>
       </class>
     </classes>

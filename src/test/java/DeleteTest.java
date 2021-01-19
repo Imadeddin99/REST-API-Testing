@@ -3,9 +3,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.skyscreamer.jsonassert.JSONAssert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -21,7 +19,8 @@ import static org.testng.Assert.assertEquals;
 public class DeleteTest {
     //testing delete with ID
 
-    @BeforeTest
+    @BeforeMethod
+    @AfterMethod
     public void setData() throws IOException {
         CommonClass.deleteAll();
         CommonClass.postAll();

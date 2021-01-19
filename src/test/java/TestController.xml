@@ -7,15 +7,21 @@
         </classes>
     </test>
 
-    <test name="REST API POST Test" >
-        <classes>
-            <class name="POSTTest"/>
-        </classes>
-    </test>
     <test name="REST API DELETE Test" >
         <classes>
             <class name="DeleteTest"/>
         </classes>
     </test>
 
+    <test name="REST API POST Test" >
+        <classes>
+            <class name="POSTTest"/>
+        </classes>
+    </test>
+    <test name="REST API PUT Test" >
+        <classes>
+            <class name="PUTTest"/>
+        </classes>
+    </test>
 </suite>
+
