@@ -2,20 +2,20 @@
 <testng-results total="18" passed="13" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-19T11:26:57Z" name="Suite1" finished-at="2021-01-19T11:27:01Z" duration-ms="3811">
+  <suite started-at="2021-01-19T11:31:16Z" name="Suite1" finished-at="2021-01-19T11:31:21Z" duration-ms="4811">
     <groups>
     </groups>
-    <test started-at="2021-01-19T11:27:00Z" name="REST API PUT Test" finished-at="2021-01-19T11:27:01Z" duration-ms="633">
+    <test started-at="2021-01-19T11:31:20Z" name="REST API PUT Test" finished-at="2021-01-19T11:31:21Z" duration-ms="648">
       <class name="PUTTest">
-        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:27:00Z" name="setData" finished-at="2021-01-19T11:27:00Z" duration-ms="47" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:31:20Z" name="setData" finished-at="2021-01-19T11:31:21Z" duration-ms="63" status="PASS">
         </test-method>
-        <test-method signature="updateNameByUpdatingEmployee()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:27:00Z" name="updateNameByUpdatingEmployee" finished-at="2021-01-19T11:27:01Z" duration-ms="100" status="PASS">
+        <test-method signature="updateNameByUpdatingEmployee()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:31:21Z" name="updateNameByUpdatingEmployee" finished-at="2021-01-19T11:31:21Z" duration-ms="107" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:27:01Z" name="setData" finished-at="2021-01-19T11:27:01Z" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:31:21Z" name="setData" finished-at="2021-01-19T11:31:21Z" duration-ms="47" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:27:01Z" name="setData" finished-at="2021-01-19T11:27:01Z" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:31:21Z" name="setData" finished-at="2021-01-19T11:31:21Z" duration-ms="68" status="PASS">
         </test-method>
-        <test-method signature="updateOnMaxSalaryByUpdatingEmployee()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:27:01Z" name="updateOnMaxSalaryByUpdatingEmployee" finished-at="2021-01-19T11:27:01Z" duration-ms="116" status="FAIL">
+        <test-method signature="updateOnMaxSalaryByUpdatingEmployee()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:31:21Z" name="updateOnMaxSalaryByUpdatingEmployee" finished-at="2021-01-19T11:31:21Z" duration-ms="116" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[items[firstName=Pascsssal].id
@@ -103,11 +103,11 @@ Expected: 105005
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:27:01Z" name="setData" finished-at="2021-01-19T11:27:01Z" duration-ms="54" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:31:21Z" name="setData" finished-at="2021-01-19T11:31:21Z" duration-ms="47" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:27:01Z" name="setData" finished-at="2021-01-19T11:27:01Z" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:31:21Z" name="setData" finished-at="2021-01-19T11:31:21Z" duration-ms="69" status="PASS">
         </test-method>
-        <test-method signature="updateOnMinSalaryByUpdatingEmployee()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:27:01Z" name="updateOnMinSalaryByUpdatingEmployee" finished-at="2021-01-19T11:27:01Z" duration-ms="94" status="FAIL">
+        <test-method signature="updateOnMinSalaryByUpdatingEmployee()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:31:21Z" name="updateOnMinSalaryByUpdatingEmployee" finished-at="2021-01-19T11:31:21Z" duration-ms="100" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[items[firstName=Test].salary
@@ -167,73 +167,73 @@ Expected: 500
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:27:01Z" name="setData" finished-at="2021-01-19T11:27:01Z" duration-ms="38" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-19T11:31:21Z" name="setData" finished-at="2021-01-19T11:31:21Z" duration-ms="31" status="PASS">
         </test-method>
       </class>
     </test>
-    <test started-at="2021-01-19T11:26:57Z" name="REST API GET Test" finished-at="2021-01-19T11:26:58Z" duration-ms="733">
+    <test started-at="2021-01-19T11:31:16Z" name="REST API GET Test" finished-at="2021-01-19T11:31:18Z" duration-ms="1727">
       <class name="GETTest">
-        <test-method is-config="true" signature="readData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:26:57Z" name="readData" finished-at="2021-01-19T11:26:57Z" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="readData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:31:16Z" name="readData" finished-at="2021-01-19T11:31:16Z" duration-ms="16" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:26:57Z" name="setData" finished-at="2021-01-19T11:26:57Z" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:31:16Z" name="setData" finished-at="2021-01-19T11:31:16Z" duration-ms="63" status="PASS">
         </test-method>
-        <test-method signature="TestGETWithNumbersInrangeOfSalaries()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:26:57Z" name="TestGETWithNumbersInrangeOfSalaries" finished-at="2021-01-19T11:26:57Z" duration-ms="109" status="PASS">
+        <test-method signature="TestGETWithNumbersInrangeOfSalaries()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:31:16Z" name="TestGETWithNumbersInrangeOfSalaries" finished-at="2021-01-19T11:31:17Z" duration-ms="1057" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:26:57Z" name="setData" finished-at="2021-01-19T11:26:58Z" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:31:17Z" name="setData" finished-at="2021-01-19T11:31:18Z" duration-ms="100" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:26:58Z" name="setData" finished-at="2021-01-19T11:26:58Z" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:31:18Z" name="setData" finished-at="2021-01-19T11:31:18Z" duration-ms="80" status="PASS">
         </test-method>
-        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:26:58Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-19T11:26:58Z" duration-ms="53" status="PASS">
+        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:31:18Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-19T11:31:18Z" duration-ms="36" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:26:58Z" name="setData" finished-at="2021-01-19T11:26:58Z" duration-ms="47" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:31:18Z" name="setData" finished-at="2021-01-19T11:31:18Z" duration-ms="47" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:26:58Z" name="setData" finished-at="2021-01-19T11:26:58Z" duration-ms="54" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:31:18Z" name="setData" finished-at="2021-01-19T11:31:18Z" duration-ms="71" status="PASS">
         </test-method>
-        <test-method signature="TestGETWithNumbersOutrangeOfSalariesLess()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:26:58Z" name="TestGETWithNumbersOutrangeOfSalariesLess" finished-at="2021-01-19T11:26:58Z" duration-ms="46" status="PASS">
+        <test-method signature="TestGETWithNumbersOutrangeOfSalariesLess()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:31:18Z" name="TestGETWithNumbersOutrangeOfSalariesLess" finished-at="2021-01-19T11:31:18Z" duration-ms="51" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:26:58Z" name="setData" finished-at="2021-01-19T11:26:58Z" duration-ms="38" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:31:18Z" name="setData" finished-at="2021-01-19T11:31:18Z" duration-ms="31" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:26:58Z" name="setData" finished-at="2021-01-19T11:26:58Z" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:31:18Z" name="setData" finished-at="2021-01-19T11:31:18Z" duration-ms="69" status="PASS">
         </test-method>
-        <test-method signature="test1()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:26:58Z" name="test1" finished-at="2021-01-19T11:26:58Z" duration-ms="37" status="PASS">
+        <test-method signature="test1()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:31:18Z" name="test1" finished-at="2021-01-19T11:31:18Z" duration-ms="49" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:26:58Z" name="setData" finished-at="2021-01-19T11:26:58Z" duration-ms="47" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@7690781]" started-at="2021-01-19T11:31:18Z" name="setData" finished-at="2021-01-19T11:31:18Z" duration-ms="51" status="PASS">
         </test-method>
       </class>
     </test>
-    <test started-at="2021-01-19T11:26:58Z" name="REST API DELETE Test" finished-at="2021-01-19T11:26:59Z" duration-ms="1010">
+    <test started-at="2021-01-19T11:31:18Z" name="REST API DELETE Test" finished-at="2021-01-19T11:31:19Z" duration-ms="970">
       <class name="DeleteTest">
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:26:58Z" name="setData" finished-at="2021-01-19T11:26:58Z" duration-ms="54" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:31:18Z" name="setData" finished-at="2021-01-19T11:31:18Z" duration-ms="68" status="PASS">
         </test-method>
-        <test-method signature="testingDeleteWithID()[pri:1, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:26:58Z" name="testingDeleteWithID" finished-at="2021-01-19T11:26:58Z" duration-ms="117" status="PASS">
+        <test-method signature="testingDeleteWithID()[pri:1, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:31:18Z" name="testingDeleteWithID" finished-at="2021-01-19T11:31:18Z" duration-ms="116" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:26:58Z" name="setData" finished-at="2021-01-19T11:26:58Z" duration-ms="68" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:31:18Z" name="setData" finished-at="2021-01-19T11:31:18Z" duration-ms="63" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:26:58Z" name="setData" finished-at="2021-01-19T11:26:58Z" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:31:18Z" name="setData" finished-at="2021-01-19T11:31:18Z" duration-ms="69" status="PASS">
         </test-method>
-        <test-method signature="testingDeleteAll()[pri:2, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:26:58Z" name="testingDeleteAll" finished-at="2021-01-19T11:26:58Z" duration-ms="100" status="PASS">
+        <test-method signature="testingDeleteAll()[pri:2, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:31:18Z" name="testingDeleteAll" finished-at="2021-01-19T11:31:19Z" duration-ms="116" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:26:58Z" name="setData" finished-at="2021-01-19T11:26:58Z" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:31:19Z" name="setData" finished-at="2021-01-19T11:31:19Z" duration-ms="69" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:26:58Z" name="setData" finished-at="2021-01-19T11:26:59Z" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:31:19Z" name="setData" finished-at="2021-01-19T11:31:19Z" duration-ms="53" status="PASS">
         </test-method>
-        <test-method signature="testingDeleteAllEmpty()[pri:3, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:26:59Z" name="testingDeleteAllEmpty" finished-at="2021-01-19T11:26:59Z" duration-ms="100" status="PASS">
+        <test-method signature="testingDeleteAllEmpty()[pri:3, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:31:19Z" name="testingDeleteAllEmpty" finished-at="2021-01-19T11:31:19Z" duration-ms="116" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:26:59Z" name="setData" finished-at="2021-01-19T11:26:59Z" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:31:19Z" name="setData" finished-at="2021-01-19T11:31:19Z" duration-ms="62" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:26:59Z" name="setData" finished-at="2021-01-19T11:26:59Z" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:31:19Z" name="setData" finished-at="2021-01-19T11:31:19Z" duration-ms="55" status="PASS">
         </test-method>
-        <test-method signature="testingDeleteWithdoesntExistID()[pri:6, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:26:59Z" name="testingDeleteWithdoesntExistID" finished-at="2021-01-19T11:26:59Z" duration-ms="131" status="PASS">
+        <test-method signature="testingDeleteWithdoesntExistID()[pri:6, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:31:19Z" name="testingDeleteWithdoesntExistID" finished-at="2021-01-19T11:31:19Z" duration-ms="114" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:26:59Z" name="setData" finished-at="2021-01-19T11:26:59Z" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-19T11:31:19Z" name="setData" finished-at="2021-01-19T11:31:19Z" duration-ms="53" status="PASS">
         </test-method>
       </class>
     </test>
-    <test started-at="2021-01-19T11:26:59Z" name="REST API POST Test" finished-at="2021-01-19T11:27:00Z" duration-ms="1398">
+    <test started-at="2021-01-19T11:31:19Z" name="REST API POST Test" finished-at="2021-01-19T11:31:20Z" duration-ms="1419">
       <class name="POSTTest">
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:26:59Z" name="setData" finished-at="2021-01-19T11:26:59Z" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:19Z" name="setData" finished-at="2021-01-19T11:31:19Z" duration-ms="78" status="PASS">
         </test-method>
-        <test-method signature="addManyEmployeesTest()[pri:1, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:26:59Z" name="addManyEmployeesTest" finished-at="2021-01-19T11:26:59Z" duration-ms="85" status="FAIL">
+        <test-method signature="addManyEmployeesTest()[pri:1, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:19Z" name="addManyEmployeesTest" finished-at="2021-01-19T11:31:19Z" duration-ms="85" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<50000> but was:<10000>]]>
@@ -283,29 +283,29 @@ Expected: 500
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:26:59Z" name="setDataAfterTest" finished-at="2021-01-19T11:26:59Z" duration-ms="53" status="PASS">
+        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:19Z" name="setDataAfterTest" finished-at="2021-01-19T11:31:19Z" duration-ms="38" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:26:59Z" name="setData" finished-at="2021-01-19T11:26:59Z" duration-ms="47" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:19Z" name="setData" finished-at="2021-01-19T11:31:19Z" duration-ms="46" status="PASS">
         </test-method>
-        <test-method signature="validPostTest()[pri:1, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:26:59Z" name="validPostTest" finished-at="2021-01-19T11:26:59Z" duration-ms="100" status="PASS">
+        <test-method signature="validPostTest()[pri:1, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:19Z" name="validPostTest" finished-at="2021-01-19T11:31:19Z" duration-ms="100" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:26:59Z" name="setDataAfterTest" finished-at="2021-01-19T11:26:59Z" duration-ms="53" status="PASS">
+        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:19Z" name="setDataAfterTest" finished-at="2021-01-19T11:31:19Z" duration-ms="54" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:26:59Z" name="setData" finished-at="2021-01-19T11:26:59Z" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:19Z" name="setData" finished-at="2021-01-19T11:31:20Z" duration-ms="62" status="PASS">
         </test-method>
-        <test-method signature="InvalidIdPostTest()[pri:2, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:26:59Z" name="InvalidIdPostTest" finished-at="2021-01-19T11:27:00Z" duration-ms="85" status="PASS">
+        <test-method signature="InvalidIdPostTest()[pri:2, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="InvalidIdPostTest" finished-at="2021-01-19T11:31:20Z" duration-ms="101" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:27:00Z" name="setDataAfterTest" finished-at="2021-01-19T11:27:00Z" duration-ms="53" status="PASS">
+        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="setDataAfterTest" finished-at="2021-01-19T11:31:20Z" duration-ms="37" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:27:00Z" name="setData" finished-at="2021-01-19T11:27:00Z" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="setData" finished-at="2021-01-19T11:31:20Z" duration-ms="79" status="PASS">
         </test-method>
-        <test-method signature="RepeatedIDPostTest()[pri:3, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:27:00Z" name="RepeatedIDPostTest" finished-at="2021-01-19T11:27:00Z" duration-ms="99" status="PASS">
+        <test-method signature="RepeatedIDPostTest()[pri:3, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="RepeatedIDPostTest" finished-at="2021-01-19T11:31:20Z" duration-ms="84" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:27:00Z" name="setDataAfterTest" finished-at="2021-01-19T11:27:00Z" duration-ms="38" status="PASS">
+        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="setDataAfterTest" finished-at="2021-01-19T11:31:20Z" duration-ms="38" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:27:00Z" name="setData" finished-at="2021-01-19T11:27:00Z" duration-ms="78" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="setData" finished-at="2021-01-19T11:31:20Z" duration-ms="85" status="PASS">
         </test-method>
-        <test-method signature="InvalidIDPostTest()[pri:4, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:27:00Z" name="InvalidIDPostTest" finished-at="2021-01-19T11:27:00Z" duration-ms="39" status="FAIL">
+        <test-method signature="InvalidIDPostTest()[pri:4, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="InvalidIDPostTest" finished-at="2021-01-19T11:31:20Z" duration-ms="47" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<ERROR> but was:<SUCCESS>]]>
@@ -355,17 +355,17 @@ Expected: 500
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:27:00Z" name="setDataAfterTest" finished-at="2021-01-19T11:27:00Z" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="setDataAfterTest" finished-at="2021-01-19T11:31:20Z" duration-ms="68" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:27:00Z" name="setData" finished-at="2021-01-19T11:27:00Z" duration-ms="62" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="setData" finished-at="2021-01-19T11:31:20Z" duration-ms="63" status="PASS">
         </test-method>
-        <test-method signature="addManyEmployeesRepeatedIDTest()[pri:7, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:27:00Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-19T11:27:00Z" duration-ms="101" status="PASS">
+        <test-method signature="addManyEmployeesRepeatedIDTest()[pri:7, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-19T11:31:20Z" duration-ms="101" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:27:00Z" name="setDataAfterTest" finished-at="2021-01-19T11:27:00Z" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="setDataAfterTest" finished-at="2021-01-19T11:31:20Z" duration-ms="36" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:27:00Z" name="setData" finished-at="2021-01-19T11:27:00Z" duration-ms="79" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="setData" finished-at="2021-01-19T11:31:20Z" duration-ms="85" status="PASS">
         </test-method>
-        <test-method signature="InvalidNamePostTest()[pri:10, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:27:00Z" name="InvalidNamePostTest" finished-at="2021-01-19T11:27:00Z" duration-ms="53" status="FAIL">
+        <test-method signature="InvalidNamePostTest()[pri:10, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="InvalidNamePostTest" finished-at="2021-01-19T11:31:20Z" duration-ms="47" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<ERROR> but was:<SUCCESS>]]>
@@ -415,7 +415,7 @@ Expected: 500
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:27:00Z" name="setDataAfterTest" finished-at="2021-01-19T11:27:00Z" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@51dcb805]" started-at="2021-01-19T11:31:20Z" name="setDataAfterTest" finished-at="2021-01-19T11:31:20Z" duration-ms="69" status="PASS">
         </test-method>
       </class>
     </test>

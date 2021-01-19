@@ -36,7 +36,7 @@ public class CommonClass {
     public static void postAll() throws IOException{
         FileReader reader;
         try {
-            reader = new FileReader("Data/PostData/post2.json");
+            reader = new FileReader("Data\\PostData\\post2.json");
             JSONParser parser = new JSONParser();
 
             JSONArray data = (JSONArray) parser.parse(reader);

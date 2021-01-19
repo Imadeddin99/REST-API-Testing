@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 4.596 sec <<< FAILURE!
-addManyEmployeesTest(POSTTest)  Time elapsed: 0.085 sec  <<< FAILURE!
+Tests run: 18, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 5.601 sec <<< FAILURE!
+addManyEmployeesTest(POSTTest)  Time elapsed: 0.101 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<50000> but was:<10000>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
@@ -11,7 +11,7 @@ java.lang.AssertionError: expected:<50000> but was:<10000>
 	at org.testng.Assert.assertEquals(Assert.java:375)
 	at POSTTest.addManyEmployeesTest(POSTTest.java:210)
 
-InvalidIDPostTest(POSTTest)  Time elapsed: 0.039 sec  <<< FAILURE!
+InvalidIDPostTest(POSTTest)  Time elapsed: 0.047 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<ERROR> but was:<SUCCESS>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
@@ -20,7 +20,7 @@ java.lang.AssertionError: expected:<ERROR> but was:<SUCCESS>
 	at org.testng.Assert.assertEquals(Assert.java:181)
 	at POSTTest.InvalidIDPostTest(POSTTest.java:132)
 
-InvalidNamePostTest(POSTTest)  Time elapsed: 0.053 sec  <<< FAILURE!
+InvalidNamePostTest(POSTTest)  Time elapsed: 0.047 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<ERROR> but was:<SUCCESS>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
@@ -29,7 +29,7 @@ java.lang.AssertionError: expected:<ERROR> but was:<SUCCESS>
 	at org.testng.Assert.assertEquals(Assert.java:181)
 	at POSTTest.InvalidNamePostTest(POSTTest.java:153)
 
-updateOnMaxSalaryByUpdatingEmployee(PUTTest)  Time elapsed: 0.132 sec  <<< FAILURE!
+updateOnMaxSalaryByUpdatingEmployee(PUTTest)  Time elapsed: 0.116 sec  <<< FAILURE!
 java.lang.AssertionError: items[firstName=Pascsssal].id
 Expected: 438745745094
      got: 438768422146
@@ -56,7 +56,7 @@ Expected: 105005
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:336)
 	at PUTTest.updateOnMaxSalaryByUpdatingEmployee(PUTTest.java:75)
 
-updateOnMinSalaryByUpdatingEmployee(PUTTest)  Time elapsed: 0.094 sec  <<< FAILURE!
+updateOnMinSalaryByUpdatingEmployee(PUTTest)  Time elapsed: 0.1 sec  <<< FAILURE!
 java.lang.AssertionError: items[firstName=Test].salary
 Expected: 500
      got: 250
