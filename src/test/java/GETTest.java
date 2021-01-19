@@ -1,5 +1,6 @@
 import org.json.JSONException;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.json.simple.parser.JSONParser;
 import org.testng.annotations.*;
@@ -19,11 +20,11 @@ public class GETTest {
     public void readData() {
         FileReader reader;
         try {
-            reader = new FileReader("Data\\GetData\\GETData.json");
+            reader = new FileReader(URLs.GETAllFile);
             JSONParser parser = new JSONParser();
             JSONObject data = (JSONObject) parser.parse(reader);
             originalData = data.toString();
-            reader = new FileReader("Data\\GetData\\GETData2.json");
+            reader = new FileReader(URLs.GETWithBoundariesFile);
             JSONParser parserBoundaries = new JSONParser();
             JSONObject dataBoundaries = (JSONObject) parserBoundaries.parse(reader);
             dataInBoundaries = dataBoundaries.toString();
@@ -37,32 +38,14 @@ public class GETTest {
 
     @BeforeMethod
     @AfterMethod
-    public void setData() throws IOException {
+    public void setData() throws IOException, ParseException {
         CommonClass.deleteAll();
         CommonClass.postAll();
     }
-    public String sendGetRequest(String Url) throws IOException {
-        URL url = new URL(Url);
-        HttpURLConnection con = (HttpURLConnection) url.openConnection();
-        con.setRequestMethod("GET");
-        con.setDoOutput(true);
-        int status = con.getResponseCode();
-        byte[] result = new byte[2000];
-        InputStream in = con.getInputStream();
-        InputStreamReader isReader = new InputStreamReader(in);
-        BufferedReader reader = new BufferedReader(isReader);
-        StringBuffer sb = new StringBuffer();
-        String str;
-        while((str = reader.readLine())!= null){
-            sb.append(str);
-        }
 
-
-        return sb.toString();
-    }
     @Test
     public void test1() throws IOException, JSONException {
-       String response =sendGetRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/");
+       String response =Requests.sendGetRequest(URLs.baseURL);
         JSONAssert.assertEquals(response.toString(), originalData, false);
 
     }
@@ -71,28 +54,26 @@ public class GETTest {
     public void TestGETWithNumbersInrangeOfSalaries() throws IOException, JSONException {
         int num1=5000;
         int num2=10000;
-       String response=sendGetRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/"+num1+"/"+num2);
+       String response=Requests.sendGetRequest(URLs.baseURL+num1+"/"+num2);
         JSONAssert.assertEquals(response.toString(), dataInBoundaries, false);
 
     }
-    @Test
-    public void TestGETWithNumbersOutrangeOfSalariesAbove() throws IOException, JSONException {
+    @Test(dataProvider ="data-provider" )
+    public void TestGETWithNumbersOutrangeOfSalariesAbove(int min,int max,int expectedResult) throws IOException, JSONException {
         int num1=90000;
         int num2=100000;
-        String response=sendGetRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/"+num1+"/"+num2);
+        String response=Requests.sendGetRequest(URLs.baseURL+min+"/"+max);
         org.json.JSONObject json=new org.json.JSONObject(response);
-        assertEquals(json.getInt("employeesCount"),0);
+        assertEquals(json.getInt("employeesCount"),expectedResult);
     }
 
-    @Test
-    public void TestGETWithNumbersOutrangeOfSalariesLess() throws IOException, JSONException {
-        int num1=100;
-        int num2=200;
-        String response=sendGetRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/"+num1+"/"+num2);
-        org.json.JSONObject json=new org.json.JSONObject(response);
-        assertEquals(json.getInt("employeesCount"),0);
-    }
 
+
+
+    @DataProvider(name = "data-provider")
+    public Object[][] dataProviderMethod() {
+        return new Object[][] { { 100,200,0 }, { 90000,100000,0 },{5000,10000,2} };
+    }
 
 
 }

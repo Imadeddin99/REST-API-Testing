@@ -1,5 +1,7 @@
-GETTest.class
-PUTTest.class
+Requests.class
 DeleteTest.class
 POSTTest.class
 CommonClass.class
+URLs.class
+GETTest.class
+PUTTest.class

@@ -19,7 +19,7 @@
                 <configuration>
                     <!-- Suite testng xml file to consider for test execution -->
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/java/TestController.xml</suiteXmlFile>
+                        <suiteXmlFile>src/main/java/TestController.xml</suiteXmlFile>
 
                     </suiteXmlFiles>
                 </configuration>
