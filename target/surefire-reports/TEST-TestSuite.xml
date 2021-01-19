@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="1.854" tests="18" errors="0" skipped="0" failures="5">
+<testsuite name="TestSuite" time="1.566" tests="18" errors="0" skipped="0" failures="5">
   <properties>
     <property name="idea.version" value="2020.3.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -58,15 +58,15 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TestGETWithNumbersInrangeOfSalaries" classname="GETTest" time="0.072"/>
-  <testcase name="TestGETWithNumbersOutrangeOfSalariesAbove" classname="GETTest" time="0.045"/>
-  <testcase name="TestGETWithNumbersOutrangeOfSalariesLess" classname="GETTest" time="0.045"/>
-  <testcase name="test1" classname="GETTest" time="0.053"/>
-  <testcase name="testingDeleteWithID" classname="DeleteTest" time="0.124"/>
-  <testcase name="testingDeleteAll" classname="DeleteTest" time="0.126"/>
-  <testcase name="testingDeleteAllEmpty" classname="DeleteTest" time="0.113"/>
-  <testcase name="testingDeleteWithdoesntExistID" classname="DeleteTest" time="0.109"/>
-  <testcase name="addManyEmployeesTest" classname="POSTTest" time="0.106">
+  <testcase name="TestGETWithNumbersInrangeOfSalaries" classname="GETTest" time="0.094"/>
+  <testcase name="TestGETWithNumbersOutrangeOfSalariesAbove" classname="GETTest" time="0.053"/>
+  <testcase name="TestGETWithNumbersOutrangeOfSalariesLess" classname="GETTest" time="0.046"/>
+  <testcase name="test1" classname="GETTest" time="0.037"/>
+  <testcase name="testingDeleteWithID" classname="DeleteTest" time="0.117"/>
+  <testcase name="testingDeleteAll" classname="DeleteTest" time="0.1"/>
+  <testcase name="testingDeleteAllEmpty" classname="DeleteTest" time="0.1"/>
+  <testcase name="testingDeleteWithdoesntExistID" classname="DeleteTest" time="0.131"/>
+  <testcase name="addManyEmployeesTest" classname="POSTTest" time="0.085">
     <failure message="expected:&lt;50000&gt; but was:&lt;10000&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<50000> but was:<10000>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
@@ -81,10 +81,10 @@
 {"status" : "SUCCESS", "message" : "New employee is added successfully."}
 </system-out>
   </testcase>
-  <testcase name="validPostTest" classname="POSTTest" time="0.374"/>
-  <testcase name="InvalidIdPostTest" classname="POSTTest" time="0.088"/>
-  <testcase name="RepeatedIDPostTest" classname="POSTTest" time="0.11"/>
-  <testcase name="InvalidIDPostTest" classname="POSTTest" time="0.045">
+  <testcase name="validPostTest" classname="POSTTest" time="0.1"/>
+  <testcase name="InvalidIdPostTest" classname="POSTTest" time="0.085"/>
+  <testcase name="RepeatedIDPostTest" classname="POSTTest" time="0.099"/>
+  <testcase name="InvalidIDPostTest" classname="POSTTest" time="0.039">
     <failure message="expected:&lt;ERROR&gt; but was:&lt;SUCCESS&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<ERROR> but was:<SUCCESS>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
@@ -100,8 +100,8 @@
 {"status" : "SUCCESS", "message" : "New employee is added successfully."}
 </system-out>
   </testcase>
-  <testcase name="addManyEmployeesRepeatedIDTest" classname="POSTTest" time="0.09"/>
-  <testcase name="InvalidNamePostTest" classname="POSTTest" time="0.046">
+  <testcase name="addManyEmployeesRepeatedIDTest" classname="POSTTest" time="0.101"/>
+  <testcase name="InvalidNamePostTest" classname="POSTTest" time="0.053">
     <failure message="expected:&lt;ERROR&gt; but was:&lt;SUCCESS&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<ERROR> but was:<SUCCESS>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
@@ -117,8 +117,8 @@
 {"status" : "SUCCESS", "message" : "New employee is added successfully."}
 </system-out>
   </testcase>
-  <testcase name="updateNameByUpdatingEmployee" classname="PUTTest" time="0.099"/>
-  <testcase name="updateOnMaxSalaryByUpdatingEmployee" classname="PUTTest" time="0.095">
+  <testcase name="updateNameByUpdatingEmployee" classname="PUTTest" time="0.1"/>
+  <testcase name="updateOnMaxSalaryByUpdatingEmployee" classname="PUTTest" time="0.132">
     <failure message="items[firstName=Pascsssal].id&#10;Expected: 438745745094&#10;     got: 438768422146&#10; ; items[firstName=Pascsssal].salary&#10;Expected: 100005&#10;     got: 50002&#10; ; items[firstName=John]&#10;Expected: a JSON object&#10;     but none found&#10; ; items[firstName=Blaise]&#10;Unexpected: a JSON object&#10; ; maxSalary&#10;Expected: 100005&#10;     got: 50002&#10; ; minSalary&#10;Expected: 5000&#10;     got: 10000&#10; ; totalSalaries&#10;Expected: 105005&#10;     got: 60002&#10;" type="java.lang.AssertionError">java.lang.AssertionError: items[firstName=Pascsssal].id
 Expected: 438745745094
      got: 438768422146
@@ -153,7 +153,7 @@ Expected: 105005
 {"maxSalary":100005,"totalSalaries":105005,"employeesCount":2,"minSalary":5000,"items":[{"firstName":"Pascsssal","lastName":"Blaisssse","id":"438745745094","salary":100005},{"firstName":"John","lastName":"Smith","id":"438768422146","salary":5000}]}
 </system-out>
   </testcase>
-  <testcase name="updateOnMinSalaryByUpdatingEmployee" classname="PUTTest" time="0.114">
+  <testcase name="updateOnMinSalaryByUpdatingEmployee" classname="PUTTest" time="0.094">
     <failure message="items[firstName=Test].salary&#10;Expected: 500&#10;     got: 250&#10; ; minSalary&#10;Expected: 500&#10;     got: 250&#10;" type="java.lang.AssertionError">java.lang.AssertionError: items[firstName=Test].salary
 Expected: 500
      got: 250

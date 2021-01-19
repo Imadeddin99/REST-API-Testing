@@ -62,13 +62,13 @@ public class PUTTest {
 @Test
     public void updateOnMaxSalaryByUpdatingEmployee() throws IOException, ParseException, JSONException {
         String ID="438768422146";
-    String response=sendPutRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/"+ID,"Data/PutData/put1.json");
+    String response=sendPutRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/"+ID,"Data\\PutData\\put1.json");
     JSONParser parser = new JSONParser();
     JSONObject resultData = (JSONObject) parser.parse(response.toString());
     String expectedResult= (String) resultData.get("status");
     assertEquals(expectedResult,"SUCCESS");
 
-   FileReader reader = new FileReader("Data/PutData/put1Result.json");
+   FileReader reader = new FileReader("Data\\PutData\\put1Result.json");
     JSONParser parserBoundaries = new JSONParser();
     JSONObject json = (JSONObject) parserBoundaries.parse(reader);
     String expectedData = json.toString();System.out.println(expectedData);
@@ -83,13 +83,13 @@ public class PUTTest {
     @Test
     public void updateOnMinSalaryByUpdatingEmployee() throws IOException, ParseException, JSONException {
         String ID="438768422146";
-        String response=sendPutRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/"+ID,"Data/PutData/put2.json");
+        String response=sendPutRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/"+ID,"Data\\PutData\\put2.json");
         JSONParser parser = new JSONParser();
         JSONObject resultData = (JSONObject) parser.parse(response.toString());
         String expectedResult= (String) resultData.get("status");
         assertEquals(expectedResult,"SUCCESS");
 
-        FileReader reader = new FileReader("Data/PutData/put2Result.json");
+        FileReader reader = new FileReader("Data\\PutData\\put2Result.json");
         JSONParser parserBoundaries = new JSONParser();
         JSONObject json = (JSONObject) parserBoundaries.parse(reader);
         String expectedData = json.toString();System.out.println(expectedData);
@@ -103,13 +103,13 @@ public class PUTTest {
     @Test
     public void updateNameByUpdatingEmployee() throws IOException, ParseException, JSONException {
         String ID="438745745094";
-        String response=sendPutRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/"+ID,"Data/PutData/put3.json");
+        String response=sendPutRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/"+ID,"Data\\PutData\\put3.json");
         JSONParser parser = new JSONParser();
         JSONObject resultData = (JSONObject) parser.parse(response.toString());
         String expectedResult= (String) resultData.get("status");
         assertEquals(expectedResult,"SUCCESS");
 
-        FileReader reader = new FileReader("Data/PutData/put3Result.json");
+        FileReader reader = new FileReader("Data\\PutData\\put3Result.json");
         JSONParser parserBoundaries = new JSONParser();
         JSONObject json = (JSONObject) parserBoundaries.parse(reader);
         String expectedData = json.toString();System.out.println(expectedData);

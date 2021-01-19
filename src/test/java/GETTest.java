@@ -19,11 +19,11 @@ public class GETTest {
     public void readData() {
         FileReader reader;
         try {
-            reader = new FileReader("Data/GetData/GETData.json");
+            reader = new FileReader("Data\\GetData\\GETData.json");
             JSONParser parser = new JSONParser();
             JSONObject data = (JSONObject) parser.parse(reader);
             originalData = data.toString();
-            reader = new FileReader("Data/GetData/GETData2.json");
+            reader = new FileReader("Data\\GetData\\GETData2.json");
             JSONParser parserBoundaries = new JSONParser();
             JSONObject dataBoundaries = (JSONObject) parserBoundaries.parse(reader);
             dataInBoundaries = dataBoundaries.toString();
