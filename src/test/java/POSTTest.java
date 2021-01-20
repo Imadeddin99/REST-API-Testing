@@ -1,13 +1,10 @@
 import org.json.JSONException;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.*;
 
 import java.io.*;
-import java.net.HttpURLConnection;
-import java.net.URL;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;
@@ -32,7 +29,7 @@ public class POSTTest {
     public void validPostTest(){
     try {
         JSONParser parser = new JSONParser();
-        String response=Requests.sendPostRequest(URLs.baseURL,URLs.postValidFile);
+        String response= HandleRestWS.sendPostRequest(URLs.baseURL,URLs.postValidFile);
         System.out.println(response.toString());
         JSONObject resultData = (JSONObject) parser.parse(response.toString());
         String expectedResult= (String) resultData.get("status");
@@ -54,7 +51,7 @@ public class POSTTest {
     @Test(priority = 2)
     public void InvalidIdPostTest(){
         try {
-            String response=Requests.sendPostRequest(URLs.baseURL,URLs.emptyIDFile);
+            String response= HandleRestWS.sendPostRequest(URLs.baseURL,URLs.emptyIDFile);
             JSONParser parser = new JSONParser();
 
             JSONObject resultData = (JSONObject) parser.parse(response.toString());
@@ -73,7 +70,7 @@ public class POSTTest {
     @Test(priority = 3)
     public void RepeatedIDPostTest(){
         try {
-            String response=Requests.sendPostRequest(URLs.baseURL,URLs.repeatedIDFile);
+            String response= HandleRestWS.sendPostRequest(URLs.baseURL,URLs.repeatedIDFile);
             JSONParser parser = new JSONParser();
             JSONObject resultData = (JSONObject) parser.parse(response.toString());
             String expectedResult= (String) resultData.get("status");
@@ -92,7 +89,7 @@ public class POSTTest {
     @Test(priority = 4)
     public void InvalidIDPostTest(){
         try {
-            String response=Requests.sendPostRequest(URLs.baseURL,URLs.invalidIDFile);
+            String response= HandleRestWS.sendPostRequest(URLs.baseURL,URLs.invalidIDFile);
             JSONParser parser = new JSONParser();
             JSONObject resultData = (JSONObject) parser.parse(response.toString());
             String expectedResult= (String) resultData.get("status");
@@ -113,7 +110,7 @@ public class POSTTest {
     public void InvalidNamePostTest(){
         try {
 
-            String response=Requests.sendPostRequest(URLs.baseURL,URLs.invalidNameFile);
+            String response= HandleRestWS.sendPostRequest(URLs.baseURL,URLs.invalidNameFile);
             JSONParser parser = new JSONParser();
             JSONObject resultData = (JSONObject) parser.parse(response.toString());
             String expectedResult= (String) resultData.get("status");
@@ -134,7 +131,7 @@ public class POSTTest {
 @Test(priority = 1 )
     public void addManyEmployeesTest() throws IOException, ParseException, JSONException {
 
- String response=Requests.sendPostRequest(URLs.baseURL,URLs.addMoreThan3File);
+ String response= HandleRestWS.sendPostRequest(URLs.baseURL,URLs.addMoreThan3File);
         JSONParser parser=new JSONParser();
         JSONObject resultData = (JSONObject) parser.parse(response.toString());
         String expectedResult= (String) resultData.get("status");
@@ -152,7 +149,7 @@ public class POSTTest {
     @Test(priority = 7 )
     public void addManyEmployeesRepeatedIDTest() throws IOException, ParseException, JSONException {
 
-        String response= Requests.sendPostRequest(URLs.baseURL,URLs.addManyWithSameID);
+        String response= HandleRestWS.sendPostRequest(URLs.baseURL,URLs.addManyWithSameID);
          JSONParser parser=new JSONParser();
             JSONObject resultData = (JSONObject) parser.parse(response.toString());
 

@@ -1,7 +1,8 @@
-Requests.class
 DeleteTest.class
 POSTTest.class
+Methods.class
 CommonClass.class
 URLs.class
 GETTest.class
+HandleRestWS.class
 PUTTest.class

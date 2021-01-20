@@ -2,17 +2,9 @@ import org.json.JSONException;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.skyscreamer.jsonassert.JSONAssert;
 import org.testng.annotations.*;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
-import java.net.URL;
 
 import static org.testng.Assert.assertEquals;
 
@@ -33,7 +25,7 @@ public class DeleteTest {
     public void testingDeleteWithID() throws IOException, ParseException, JSONException {
         JSONParser parser=new JSONParser();
         String ID="438745745094";
-        String response = Requests.sendDeleteRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/"+ID);
+        String response = HandleRestWS.sendDeleteRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/"+ID);
         System.out.println(response);
         JSONObject resultData = (JSONObject) parser.parse(response);
         String expectedResult= (String) resultData.get("status");
@@ -53,7 +45,7 @@ public class DeleteTest {
     public void testingDeleteAll() throws IOException, ParseException, JSONException {
         JSONParser parser=new JSONParser();
         String ID="438745745094";
-        String response =Requests.sendDeleteRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/");
+        String response = HandleRestWS.sendDeleteRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/");
         System.out.println(response);
         JSONObject resultData = (JSONObject) parser.parse(response);
         String expectedResult= (String) resultData.get("status");
@@ -69,7 +61,7 @@ public class DeleteTest {
     public void testingDeleteAllEmpty() throws IOException, ParseException, JSONException {
         JSONParser parser=new JSONParser();
         String ID="438745745094";
-        String response =Requests.sendDeleteRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/");
+        String response = HandleRestWS.sendDeleteRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/");
         System.out.println(response);
         JSONObject resultData = (JSONObject) parser.parse(response);
         String expectedResult= (String) resultData.get("status");
@@ -86,7 +78,7 @@ public class DeleteTest {
     public void testingDeleteWithdoesntExistID() throws IOException, ParseException, JSONException {
         JSONParser parser=new JSONParser();
         String ID="438";
-        String response =Requests.sendDeleteRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/"+ID);
+        String response = HandleRestWS.sendDeleteRequest("http://192.168.200.91:8080/demo-server/employee-module/Imad/"+ID);
         System.out.println(response);
         JSONObject resultData = (JSONObject) parser.parse(response);
         String expectedResult= (String) resultData.get("status");

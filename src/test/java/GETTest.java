@@ -6,8 +6,6 @@ import org.json.simple.parser.JSONParser;
 import org.testng.annotations.*;
 
 import java.io.*;
-import java.net.HttpURLConnection;
-import java.net.URL;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;
@@ -45,7 +43,7 @@ public class GETTest {
 
     @Test
     public void test1() throws IOException, JSONException {
-       String response =Requests.sendGetRequest(URLs.baseURL);
+       String response = HandleRestWS.sendGetRequest(URLs.baseURL);
         JSONAssert.assertEquals(response.toString(), originalData, false);
 
     }
@@ -54,15 +52,14 @@ public class GETTest {
     public void TestGETWithNumbersInrangeOfSalaries() throws IOException, JSONException {
         int num1=5000;
         int num2=10000;
-       String response=Requests.sendGetRequest(URLs.baseURL+num1+"/"+num2);
+       String response= HandleRestWS.sendGetRequest(URLs.baseURL+num1+"/"+num2);
         JSONAssert.assertEquals(response.toString(), dataInBoundaries, false);
 
     }
     @Test(dataProvider ="data-provider" )
     public void TestGETWithNumbersOutrangeOfSalariesAbove(int min,int max,int expectedResult) throws IOException, JSONException {
-        int num1=90000;
-        int num2=100000;
-        String response=Requests.sendGetRequest(URLs.baseURL+min+"/"+max);
+
+        String response= HandleRestWS.sendGetRequest(URLs.baseURL+min+"/"+max);
         org.json.JSONObject json=new org.json.JSONObject(response);
         assertEquals(json.getInt("employeesCount"),expectedResult);
     }

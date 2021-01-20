@@ -8,8 +8,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.*;
-import java.net.HttpURLConnection;
-import java.net.URL;
 
 import static org.testng.Assert.assertEquals;
 
@@ -29,7 +27,7 @@ public class PUTTest {
 @Test
     public void updateOnMaxSalaryByUpdatingEmployee() throws IOException, ParseException, JSONException {
         String ID="438768422146";
-    String response= Requests.sendPutRequest(URLs.baseURL+ID,URLs.updateWithMaxSalaryFile);
+    String response= HandleRestWS.sendPutRequest(URLs.baseURL+ID,URLs.updateWithMaxSalaryFile);
     JSONParser parser = new JSONParser();
     JSONObject resultData = (JSONObject) parser.parse(response.toString());
     String expectedResult= (String) resultData.get("status");
@@ -50,7 +48,7 @@ public class PUTTest {
     @Test
     public void updateOnMinSalaryByUpdatingEmployee() throws IOException, ParseException, JSONException {
         String ID="438768422146";
-        String response=Requests.sendPutRequest(URLs.baseURL+ID,URLs.updateWithMinSalaryFile);
+        String response= HandleRestWS.sendPutRequest(URLs.baseURL+ID,URLs.updateWithMinSalaryFile);
         JSONParser parser = new JSONParser();
         JSONObject resultData = (JSONObject) parser.parse(response.toString());
         String expectedResult= (String) resultData.get("status");
@@ -70,7 +68,7 @@ public class PUTTest {
     @Test
     public void updateNameByUpdatingEmployee() throws IOException, ParseException, JSONException {
         String ID="438745745094";
-        String response=Requests.sendPutRequest(URLs.baseURL+ID, URLs.updateValidData);
+        String response= HandleRestWS.sendPutRequest(URLs.baseURL+ID, URLs.updateValidData);
         JSONParser parser = new JSONParser();
         JSONObject resultData = (JSONObject) parser.parse(response.toString());
         String expectedResult= (String) resultData.get("status");

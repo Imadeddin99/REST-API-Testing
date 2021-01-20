@@ -7,12 +7,15 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class Requests {
+public class HandleRestWS {
 
-    public static HttpURLConnection sendTheRequest(String Url,String method) throws IOException {
+
+
+
+    public static HttpURLConnection sendTheRequest(String Url, Methods method) throws IOException {
         URL url = new URL(Url);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
-        con.setRequestMethod(method);
+        con.setRequestMethod(method.toString());
         con.setRequestProperty("Content-Type", "application/json" );
 
         con.setAllowUserInteraction(true);
@@ -66,7 +69,7 @@ public class Requests {
 
 
     public static String sendGetRequest(String Url) throws IOException {
-        HttpURLConnection con=sendTheRequest(Url,"GET");
+        HttpURLConnection con=sendTheRequest(Url,Methods.GET);
         String response=readResponse(con);
         return response;
     }
@@ -74,21 +77,21 @@ public class Requests {
 
 
     public static String sendPutRequest(String Url, String filePath) throws IOException, ParseException {
-        HttpURLConnection con=sendTheRequest(Url,"PUT");
+        HttpURLConnection con=sendTheRequest(Url,Methods.PUT);
         readJSONObjectAndSend(filePath,con);
         String response=readResponse(con);
         return response;
     }
 
     public static String sendPostRequest(String Url, String filePath) throws IOException, ParseException {
-        HttpURLConnection con=sendTheRequest(Url,"POST");
+        HttpURLConnection con=sendTheRequest(Url,Methods.POST);
         readJSONArrayAndSend(filePath,con);
         String response=readResponse(con);
         return response;
     }
 
     public static String sendDeleteRequest(String Url) throws IOException {
-        HttpURLConnection con=sendTheRequest(Url,"DELETE");
+        HttpURLConnection con=sendTheRequest(Url,Methods.DELETE);
         String response=readResponse(con);
         return response;
     }
