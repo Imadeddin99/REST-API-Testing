@@ -3,41 +3,38 @@
 <suite parallel="none" name="Failed suite [Suite1]" verbose="0">
   <test parallel="none" name="REST API PUT Test(failed)" preserve-order="true">
     <classes>
-      <class name="GETTest">
+      <class name="POSTTest">
         <methods>
-          <include name="readData"/>
           <include name="setData"/>
         </methods>
       </class>
-      <class name="DeleteTest">
+      <class name="GETTest">
         <methods>
           <include name="setData"/>
         </methods>
       </class>
       <class name="PUTTest">
         <methods>
-          <include name="updateOnMaxSalaryByUpdatingEmployee"/>
+          <include name="updateNameByUpdatingEmployee" invocation-numbers="0 1"/>
           <include name="setData"/>
-          <include name="updateOnMinSalaryByUpdatingEmployee"/>
         </methods>
       </class>
-      <class name="POSTTest">
+      <class name="DeleteTest">
         <methods>
           <include name="setData"/>
-          <include name="setDataAfterTest"/>
         </methods>
       </class>
     </classes>
   </test>
   <test parallel="none" name="REST API POST Test(failed)" preserve-order="true">
     <classes>
-      <class name="GETTest">
+      <class name="POSTTest">
         <methods>
-          <include name="readData"/>
           <include name="setData"/>
+          <include name="addManyEmployeesRepeatedIDTest" invocation-numbers="3 4 5"/>
         </methods>
       </class>
-      <class name="DeleteTest">
+      <class name="GETTest">
         <methods>
           <include name="setData"/>
         </methods>
@@ -47,13 +44,9 @@
           <include name="setData"/>
         </methods>
       </class>
-      <class name="POSTTest">
+      <class name="DeleteTest">
         <methods>
           <include name="setData"/>
-          <include name="InvalidNamePostTest"/>
-          <include name="setDataAfterTest"/>
-          <include name="addManyEmployeesTest"/>
-          <include name="InvalidIDPostTest"/>
         </methods>
       </class>
     </classes>

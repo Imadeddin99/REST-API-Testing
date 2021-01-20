@@ -3,8 +3,8 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.skyscreamer.jsonassert.JSONAssert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.*;
@@ -16,73 +16,24 @@ public class PUTTest {
 
 
     @BeforeMethod
-    @AfterMethod
     public void setData() throws IOException, ParseException {
-        CommonClass.deleteAll();
-        CommonClass.postAll();
-
+        CommonClass.clearChanges();
     }
 
-
-@Test
-    public void updateOnMaxSalaryByUpdatingEmployee() throws IOException, ParseException, JSONException {
-        String ID="438768422146";
-    String response= HandleRestWS.sendPutRequest(URLs.baseURL+ID,URLs.updateWithMaxSalaryFile);
-    JSONParser parser = new JSONParser();
-    JSONObject resultData = (JSONObject) parser.parse(response.toString());
-    String expectedResult= (String) resultData.get("status");
-    assertEquals(expectedResult,"SUCCESS");
-
-   FileReader reader = new FileReader(URLs.updateWithMaxSalaryResultFile);
-    JSONParser parserBoundaries = new JSONParser();
-    JSONObject json = (JSONObject) parserBoundaries.parse(reader);
-    String expectedData = json.toString();System.out.println(expectedData);
-    JSONAssert.assertEquals(expectedData,CommonClass.getAll(),false);
-
-
-
-
-}
-
-
-    @Test
-    public void updateOnMinSalaryByUpdatingEmployee() throws IOException, ParseException, JSONException {
-        String ID="438768422146";
-        String response= HandleRestWS.sendPutRequest(URLs.baseURL+ID,URLs.updateWithMinSalaryFile);
-        JSONParser parser = new JSONParser();
-        JSONObject resultData = (JSONObject) parser.parse(response.toString());
-        String expectedResult= (String) resultData.get("status");
-        assertEquals(expectedResult,"SUCCESS");
-
-        FileReader reader = new FileReader(URLs.updateWithMinSalaryResultFile);
-        JSONParser parserBoundaries = new JSONParser();
-        JSONObject json = (JSONObject) parserBoundaries.parse(reader);
-        String expectedData = json.toString();System.out.println(expectedData);
+    @Test(dataProvider = "data-provider")
+    public void updateNameByUpdatingEmployee(String ID,String fileInputName, String fileResultName,String status) throws IOException, ParseException, JSONException {
+        String response= HandleRestWS.sendPutRequest(URLs.baseURL+ID, fileInputName,status);
+        String expectedData = JSONUtils.readJSONObjectFromFile(fileResultName);
         JSONAssert.assertEquals(expectedData,CommonClass.getAll(),false);
-
-
-
-
     }
 
-    @Test
-    public void updateNameByUpdatingEmployee() throws IOException, ParseException, JSONException {
-        String ID="438745745094";
-        String response= HandleRestWS.sendPutRequest(URLs.baseURL+ID, URLs.updateValidData);
-        JSONParser parser = new JSONParser();
-        JSONObject resultData = (JSONObject) parser.parse(response.toString());
-        String expectedResult= (String) resultData.get("status");
-        assertEquals(expectedResult,"SUCCESS");
-
-        FileReader reader = new FileReader(URLs.updateValidDataResult);
-        JSONParser parserBoundaries = new JSONParser();
-        JSONObject json = (JSONObject) parserBoundaries.parse(reader);
-        String expectedData = json.toString();System.out.println(expectedData);
-        JSONAssert.assertEquals(expectedData,CommonClass.getAll(),false);
-
-
-
-
+    @DataProvider(name = "data-provider")
+    public Object[][] dataProviderMethod() {
+        return new Object[][] {
+                { "438768422146",FilesPaths.updateWithMaxSalaryFile,FilesPaths.updateWithMaxSalaryResultFile,ResponseStatus.SUCCESS.toString() },
+                { "438768422146",FilesPaths.updateWithMinSalaryFile,FilesPaths.updateWithMinSalaryResultFile,ResponseStatus.SUCCESS.toString() },
+                {"438745745094",FilesPaths.updateValidData,FilesPaths.updateValidDataResult,ResponseStatus.SUCCESS.toString()}
+        };
     }
 
 

@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="19" passed="14" failed="5" skipped="0">
+<testng-results total="18" passed="13" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-20T08:54:47Z" name="Suite1" finished-at="2021-01-20T08:55:09Z" duration-ms="21606">
+  <suite started-at="2021-01-20T14:11:03Z" name="Suite1" finished-at="2021-01-20T14:11:21Z" duration-ms="17733">
     <groups>
     </groups>
-    <test started-at="2021-01-20T08:55:05Z" name="REST API PUT Test" finished-at="2021-01-20T08:55:09Z" duration-ms="4099">
+    <test started-at="2021-01-20T14:11:18Z" name="REST API PUT Test" finished-at="2021-01-20T14:11:21Z" duration-ms="3393">
       <class name="PUTTest">
-        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-20T08:55:05Z" name="setData" finished-at="2021-01-20T08:55:05Z" duration-ms="323" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@29e495ff]" started-at="2021-01-20T14:11:18Z" name="setData" finished-at="2021-01-20T14:11:19Z" duration-ms="1404" status="PASS">
         </test-method>
-        <test-method signature="updateNameByUpdatingEmployee()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-20T08:55:05Z" name="updateNameByUpdatingEmployee" finished-at="2021-01-20T08:55:06Z" duration-ms="322" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-20T08:55:06Z" name="setData" finished-at="2021-01-20T08:55:06Z" duration-ms="331" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-20T08:55:06Z" name="setData" finished-at="2021-01-20T08:55:06Z" duration-ms="301" status="PASS">
-        </test-method>
-        <test-method signature="updateOnMaxSalaryByUpdatingEmployee()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-20T08:55:06Z" name="updateOnMaxSalaryByUpdatingEmployee" finished-at="2021-01-20T08:55:07Z" duration-ms="339" status="FAIL">
+        <test-method signature="updateNameByUpdatingEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:PUTTest@29e495ff]" started-at="2021-01-20T14:11:19Z" name="updateNameByUpdatingEmployee" finished-at="2021-01-20T14:11:19Z" duration-ms="369" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[438768422146]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Data\PutData\put1.json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Data\PutData\put1Result.json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[items[firstName=Pascsssal].id
@@ -65,7 +81,7 @@ Expected: 105005
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:417)
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:394)
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:336)
-	at PUTTest.updateOnMaxSalaryByUpdatingEmployee(PUTTest.java:40)
+	at PUTTest.updateNameByUpdatingEmployee(PUTTest.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,11 +119,31 @@ Expected: 105005
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-20T08:55:07Z" name="setData" finished-at="2021-01-20T08:55:08Z" duration-ms="1343" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@29e495ff]" started-at="2021-01-20T14:11:19Z" name="setData" finished-at="2021-01-20T14:11:20Z" duration-ms="401" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-20T08:55:08Z" name="setData" finished-at="2021-01-20T08:55:08Z" duration-ms="350" status="PASS">
-        </test-method>
-        <test-method signature="updateOnMinSalaryByUpdatingEmployee()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-20T08:55:08Z" name="updateOnMinSalaryByUpdatingEmployee" finished-at="2021-01-20T08:55:09Z" duration-ms="373" status="FAIL">
+        <test-method signature="updateNameByUpdatingEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:PUTTest@29e495ff]" started-at="2021-01-20T14:11:20Z" name="updateNameByUpdatingEmployee" finished-at="2021-01-20T14:11:20Z" duration-ms="402" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[438768422146]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Data\PutData\put2.json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Data\PutData\put2Result.json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[items[firstName=Test].salary
@@ -129,7 +165,7 @@ Expected: 500
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:417)
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:394)
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:336)
-	at PUTTest.updateOnMinSalaryByUpdatingEmployee(PUTTest.java:61)
+	at PUTTest.updateNameByUpdatingEmployee(PUTTest.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -167,23 +203,39 @@ Expected: 500
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@5ace1ed4]" started-at="2021-01-20T08:55:09Z" name="setData" finished-at="2021-01-20T08:55:09Z" duration-ms="416" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:PUTTest@29e495ff]" started-at="2021-01-20T14:11:20Z" name="setData" finished-at="2021-01-20T14:11:21Z" duration-ms="431" status="PASS">
+        </test-method>
+        <test-method signature="updateNameByUpdatingEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:PUTTest@29e495ff]" started-at="2021-01-20T14:11:21Z" name="updateNameByUpdatingEmployee" finished-at="2021-01-20T14:11:21Z" duration-ms="386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[438745745094]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Data\PutData\put3.json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Data\PutData\put3Result.json]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+          </params>
         </test-method>
       </class>
     </test>
-    <test started-at="2021-01-20T08:54:47Z" name="REST API GET Test" finished-at="2021-01-20T08:54:52Z" duration-ms="4692">
+    <test started-at="2021-01-20T14:11:03Z" name="REST API GET Test" finished-at="2021-01-20T14:11:05Z" duration-ms="2043">
       <class name="GETTest">
-        <test-method is-config="true" signature="readData()[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:47Z" name="readData" finished-at="2021-01-20T08:54:47Z" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@2e222612]" started-at="2021-01-20T14:11:03Z" name="setData" finished-at="2021-01-20T14:11:04Z" duration-ms="339" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:47Z" name="setData" finished-at="2021-01-20T08:54:48Z" duration-ms="391" status="PASS">
-        </test-method>
-        <test-method signature="TestGETWithNumbersInrangeOfSalaries()[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:48Z" name="TestGETWithNumbersInrangeOfSalaries" finished-at="2021-01-20T08:54:48Z" duration-ms="220" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:48Z" name="setData" finished-at="2021-01-20T08:54:48Z" duration-ms="409" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:48Z" name="setData" finished-at="2021-01-20T08:54:49Z" duration-ms="407" status="PASS">
-        </test-method>
-        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove(int, int, int)[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:49Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-20T08:54:49Z" duration-ms="211" status="PASS">
+        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove(int, int, int, java.lang.String)[pri:0, instance:GETTest@2e222612]" started-at="2021-01-20T14:11:04Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-20T14:11:04Z" duration-ms="169" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -200,13 +252,16 @@ Expected: 500
                 <![CDATA[0]]>
               </value>
             </param>
+            <param index="3">
+              <value>
+                <![CDATA[Data\GetData\GETData3.json]]>
+              </value>
+            </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:49Z" name="setData" finished-at="2021-01-20T08:54:49Z" duration-ms="432" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@2e222612]" started-at="2021-01-20T14:11:04Z" name="setData" finished-at="2021-01-20T14:11:04Z" duration-ms="379" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:49Z" name="setData" finished-at="2021-01-20T08:54:50Z" duration-ms="421" status="PASS">
-        </test-method>
-        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove(int, int, int)[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:50Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-20T08:54:50Z" duration-ms="216" status="PASS">
+        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove(int, int, int, java.lang.String)[pri:0, instance:GETTest@2e222612]" started-at="2021-01-20T14:11:04Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-20T14:11:04Z" duration-ms="185" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -223,13 +278,16 @@ Expected: 500
                 <![CDATA[0]]>
               </value>
             </param>
+            <param index="3">
+              <value>
+                <![CDATA[Data\GetData\GETData3.json]]>
+              </value>
+            </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:50Z" name="setData" finished-at="2021-01-20T08:54:51Z" duration-ms="448" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@2e222612]" started-at="2021-01-20T14:11:04Z" name="setData" finished-at="2021-01-20T14:11:05Z" duration-ms="316" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:51Z" name="setData" finished-at="2021-01-20T08:54:51Z" duration-ms="291" status="PASS">
-        </test-method>
-        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove(int, int, int)[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:51Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-20T08:54:51Z" duration-ms="152" status="PASS">
+        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove(int, int, int, java.lang.String)[pri:0, instance:GETTest@2e222612]" started-at="2021-01-20T14:11:05Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-20T14:11:05Z" duration-ms="154" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -246,51 +304,420 @@ Expected: 500
                 <![CDATA[2]]>
               </value>
             </param>
+            <param index="3">
+              <value>
+                <![CDATA[Data\GetData\GETData.json]]>
+              </value>
+            </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:51Z" name="setData" finished-at="2021-01-20T08:54:51Z" duration-ms="286" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@2e222612]" started-at="2021-01-20T14:11:05Z" name="setData" finished-at="2021-01-20T14:11:05Z" duration-ms="332" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:51Z" name="setData" finished-at="2021-01-20T08:54:52Z" duration-ms="312" status="PASS">
-        </test-method>
-        <test-method signature="test1()[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:52Z" name="test1" finished-at="2021-01-20T08:54:52Z" duration-ms="165" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:GETTest@6b8ca3c8]" started-at="2021-01-20T08:54:52Z" name="setData" finished-at="2021-01-20T08:54:52Z" duration-ms="312" status="PASS">
+        <test-method signature="test1()[pri:0, instance:GETTest@2e222612]" started-at="2021-01-20T14:11:05Z" name="test1" finished-at="2021-01-20T14:11:05Z" duration-ms="153" status="PASS">
         </test-method>
       </class>
     </test>
-    <test started-at="2021-01-20T08:54:52Z" name="REST API DELETE Test" finished-at="2021-01-20T08:54:58Z" duration-ms="5799">
+    <test started-at="2021-01-20T14:11:05Z" name="REST API DELETE Test" finished-at="2021-01-20T14:11:12Z" duration-ms="6350">
       <class name="DeleteTest">
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-20T08:54:52Z" name="setData" finished-at="2021-01-20T08:54:52Z" duration-ms="302" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@67080771]" started-at="2021-01-20T14:11:05Z" name="setData" finished-at="2021-01-20T14:11:06Z" duration-ms="247" status="PASS">
         </test-method>
-        <test-method signature="testingDeleteWithID()[pri:1, instance:DeleteTest@29e495ff]" started-at="2021-01-20T08:54:52Z" name="testingDeleteWithID" finished-at="2021-01-20T08:54:53Z" duration-ms="643" status="PASS">
+        <test-method signature="test(java.lang.String, java.lang.String, int)[pri:0, instance:DeleteTest@67080771]" started-at="2021-01-20T14:11:06Z" name="test" finished-at="2021-01-20T14:11:07Z" duration-ms="1675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[438745745094]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-20T08:54:53Z" name="setData" finished-at="2021-01-20T08:54:53Z" duration-ms="338" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@67080771]" started-at="2021-01-20T14:11:07Z" name="setData" finished-at="2021-01-20T14:11:08Z" duration-ms="316" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-20T08:54:53Z" name="setData" finished-at="2021-01-20T08:54:54Z" duration-ms="296" status="PASS">
+        <test-method signature="test(java.lang.String, java.lang.String, int)[pri:0, instance:DeleteTest@67080771]" started-at="2021-01-20T14:11:08Z" name="test" finished-at="2021-01-20T14:11:08Z" duration-ms="723" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
         </test-method>
-        <test-method signature="testingDeleteAll()[pri:2, instance:DeleteTest@29e495ff]" started-at="2021-01-20T08:54:54Z" name="testingDeleteAll" finished-at="2021-01-20T08:54:54Z" duration-ms="707" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@67080771]" started-at="2021-01-20T14:11:08Z" name="setData" finished-at="2021-01-20T14:11:09Z" duration-ms="294" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-20T08:54:54Z" name="setData" finished-at="2021-01-20T08:54:55Z" duration-ms="359" status="PASS">
+        <test-method signature="test(java.lang.String, java.lang.String, int)[pri:0, instance:DeleteTest@67080771]" started-at="2021-01-20T14:11:09Z" name="test" finished-at="2021-01-20T14:11:10Z" duration-ms="1590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[438745745094]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-20T08:54:55Z" name="setData" finished-at="2021-01-20T08:54:55Z" duration-ms="383" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@67080771]" started-at="2021-01-20T14:11:10Z" name="setData" finished-at="2021-01-20T14:11:11Z" duration-ms="1226" status="PASS">
         </test-method>
-        <test-method signature="testingDeleteAllEmpty()[pri:3, instance:DeleteTest@29e495ff]" started-at="2021-01-20T08:54:55Z" name="testingDeleteAllEmpty" finished-at="2021-01-20T08:54:56Z" duration-ms="805" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-20T08:54:56Z" name="setData" finished-at="2021-01-20T08:54:56Z" duration-ms="395" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-20T08:54:56Z" name="setData" finished-at="2021-01-20T08:54:57Z" duration-ms="432" status="PASS">
-        </test-method>
-        <test-method signature="testingDeleteWithdoesntExistID()[pri:6, instance:DeleteTest@29e495ff]" started-at="2021-01-20T08:54:57Z" name="testingDeleteWithdoesntExistID" finished-at="2021-01-20T08:54:58Z" duration-ms="761" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:DeleteTest@29e495ff]" started-at="2021-01-20T08:54:58Z" name="setData" finished-at="2021-01-20T08:54:58Z" duration-ms="377" status="PASS">
+        <test-method signature="test(java.lang.String, java.lang.String, int)[pri:0, instance:DeleteTest@67080771]" started-at="2021-01-20T14:11:11Z" name="test" finished-at="2021-01-20T14:11:12Z" duration-ms="279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[438]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
         </test-method>
       </class>
     </test>
-    <test started-at="2021-01-20T08:54:58Z" name="REST API POST Test" finished-at="2021-01-20T08:55:05Z" duration-ms="6967">
+    <test started-at="2021-01-20T14:11:12Z" name="REST API POST Test" finished-at="2021-01-20T14:11:18Z" duration-ms="5915">
       <class name="POSTTest">
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:54:58Z" name="setData" finished-at="2021-01-20T08:54:58Z" duration-ms="380" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:12Z" name="setData" finished-at="2021-01-20T14:11:12Z" duration-ms="154" status="PASS">
         </test-method>
-        <test-method signature="addManyEmployeesTest()[pri:1, instance:POSTTest@66498326]" started-at="2021-01-20T08:54:58Z" name="addManyEmployeesTest" finished-at="2021-01-20T08:54:59Z" duration-ms="342" status="FAIL">
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:12Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T14:11:12Z" duration-ms="185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Data\PostData\Post1.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[35000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[50000]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:12Z" name="setData" finished-at="2021-01-20T14:11:13Z" duration-ms="1204" status="PASS">
+        </test-method>
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:13Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T14:11:13Z" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Data\PostData\post3.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[15000]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:13Z" name="setData" finished-at="2021-01-20T14:11:14Z" duration-ms="178" status="PASS">
+        </test-method>
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:14Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T14:11:14Z" duration-ms="216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Data\PostData\POST4.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[15000]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:14Z" name="setData" finished-at="2021-01-20T14:11:14Z" duration-ms="185" status="PASS">
+        </test-method>
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:14Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T14:11:14Z" duration-ms="122" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Data\PostData\Post6.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[15000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<ERROR> but was:<SUCCESS>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<ERROR> but was:<SUCCESS>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:171)
+	at org.testng.Assert.assertEquals(Assert.java:181)
+	at POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:14Z" name="setData" finished-at="2021-01-20T14:11:14Z" duration-ms="232" status="PASS">
+        </test-method>
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:14Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T14:11:14Z" duration-ms="133" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Data\PostData\POST5.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[15000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<ERROR> but was:<SUCCESS>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<ERROR> but was:<SUCCESS>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:171)
+	at org.testng.Assert.assertEquals(Assert.java:181)
+	at POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:14Z" name="setData" finished-at="2021-01-20T14:11:15Z" duration-ms="252" status="PASS">
+        </test-method>
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:15Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T14:11:15Z" duration-ms="248" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Data\PostData\post7.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[50000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[90000]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<50000> but was:<10000>]]>
@@ -302,7 +729,7 @@ Expected: 500
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:365)
 	at org.testng.Assert.assertEquals(Assert.java:375)
-	at POSTTest.addManyEmployeesTest(POSTTest.java:141)
+	at POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -340,139 +767,41 @@ Expected: 500
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:54:59Z" name="setDataAfterTest" finished-at="2021-01-20T08:54:59Z" duration-ms="323" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:15Z" name="setData" finished-at="2021-01-20T14:11:17Z" duration-ms="1806" status="PASS">
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:54:59Z" name="setData" finished-at="2021-01-20T08:54:59Z" duration-ms="347" status="PASS">
-        </test-method>
-        <test-method signature="validPostTest()[pri:1, instance:POSTTest@66498326]" started-at="2021-01-20T08:54:59Z" name="validPostTest" finished-at="2021-01-20T08:55:00Z" duration-ms="386" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:00Z" name="setDataAfterTest" finished-at="2021-01-20T08:55:00Z" duration-ms="415" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:00Z" name="setData" finished-at="2021-01-20T08:55:00Z" duration-ms="326" status="PASS">
-        </test-method>
-        <test-method signature="InvalidIdPostTest()[pri:2, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:00Z" name="InvalidIdPostTest" finished-at="2021-01-20T08:55:01Z" duration-ms="236" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:01Z" name="setDataAfterTest" finished-at="2021-01-20T08:55:01Z" duration-ms="303" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:01Z" name="setData" finished-at="2021-01-20T08:55:01Z" duration-ms="283" status="PASS">
-        </test-method>
-        <test-method signature="RepeatedIDPostTest()[pri:3, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:01Z" name="RepeatedIDPostTest" finished-at="2021-01-20T08:55:02Z" duration-ms="264" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:02Z" name="setDataAfterTest" finished-at="2021-01-20T08:55:02Z" duration-ms="314" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:02Z" name="setData" finished-at="2021-01-20T08:55:02Z" duration-ms="328" status="PASS">
-        </test-method>
-        <test-method signature="InvalidIDPostTest()[pri:4, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:02Z" name="InvalidIDPostTest" finished-at="2021-01-20T08:55:02Z" duration-ms="156" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected:<ERROR> but was:<SUCCESS>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected:<ERROR> but was:<SUCCESS>
-	at org.testng.Assert.fail(Assert.java:89)
-	at org.testng.Assert.failNotEquals(Assert.java:489)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:171)
-	at org.testng.Assert.assertEquals(Assert.java:181)
-	at POSTTest.InvalidIDPostTest(POSTTest.java:96)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:758)
-	at org.testng.TestRunner.run(TestRunner.java:613)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
-	at org.testng.TestNG.run(TestNG.java:974)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-]]>
-            </full-stacktrace>
-          </exception>
-        </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:02Z" name="setDataAfterTest" finished-at="2021-01-20T08:55:03Z" duration-ms="306" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:03Z" name="setData" finished-at="2021-01-20T08:55:03Z" duration-ms="556" status="PASS">
-        </test-method>
-        <test-method signature="addManyEmployeesRepeatedIDTest()[pri:7, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:03Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T08:55:04Z" duration-ms="516" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:04Z" name="setDataAfterTest" finished-at="2021-01-20T08:55:04Z" duration-ms="323" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:04Z" name="setData" finished-at="2021-01-20T08:55:04Z" duration-ms="324" status="PASS">
-        </test-method>
-        <test-method signature="InvalidNamePostTest()[pri:10, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:04Z" name="InvalidNamePostTest" finished-at="2021-01-20T08:55:05Z" duration-ms="169" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected:<ERROR> but was:<SUCCESS>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected:<ERROR> but was:<SUCCESS>
-	at org.testng.Assert.fail(Assert.java:89)
-	at org.testng.Assert.failNotEquals(Assert.java:489)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:171)
-	at org.testng.Assert.assertEquals(Assert.java:181)
-	at POSTTest.InvalidNamePostTest(POSTTest.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:758)
-	at org.testng.TestRunner.run(TestRunner.java:613)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
-	at org.testng.TestNG.run(TestNG.java:974)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-]]>
-            </full-stacktrace>
-          </exception>
-        </test-method>
-        <test-method is-config="true" signature="setDataAfterTest()[pri:0, instance:POSTTest@66498326]" started-at="2021-01-20T08:55:05Z" name="setDataAfterTest" finished-at="2021-01-20T08:55:05Z" duration-ms="353" status="PASS">
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:POSTTest@4e7912d8]" started-at="2021-01-20T14:11:17Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T14:11:18Z" duration-ms="816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Data\PostData\post8.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[15100]]>
+              </value>
+            </param>
+          </params>
         </test-method>
       </class>
     </test>
