@@ -18,6 +18,9 @@
                 <version>2.14.1</version>
                 <configuration>
                     <!-- Suite testng xml file to consider for test execution -->
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <reuseForks>true</reuseForks>
+                    <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
                     <suiteXmlFiles>
                         <suiteXmlFile>src/main/java/TestController.xml</suiteXmlFile>
 
