@@ -7,7 +7,7 @@ public enum ResponseFields {
     STATUS{
         @Override
         public String toString() {
-            return "Status";
+            return "status";
         }
     },TOTAL_SALARIES{
         @Override
