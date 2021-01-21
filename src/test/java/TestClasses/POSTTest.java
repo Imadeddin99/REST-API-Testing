@@ -22,7 +22,7 @@ public class POSTTest extends CommonClass{
 
 
     @Test(dataProvider = "data-provider")
-    public void addManyEmployeesRepeatedIDTest
+    public void postTest
             (String inputFilePath,String status,int employeeCount,int maxSalary,int minSalary,int totalSalaries)
             throws IOException, ParseException, JSONException {
         String response= HandleRestWS.sendPostRequest(URLs.baseURL, inputFilePath);

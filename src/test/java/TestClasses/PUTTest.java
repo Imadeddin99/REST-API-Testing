@@ -23,7 +23,7 @@ public class PUTTest extends CommonClass{
 
 
     @Test(dataProvider = "data-provider")
-    public void updateNameByUpdatingEmployee(String ID,String fileInputName, String fileResultName,String status) throws IOException, ParseException, JSONException {
+    public void putTest(String ID,String fileInputName, String fileResultName,String status) throws IOException, ParseException, JSONException {
         String response= HandleRestWS.sendPutRequest(URLs.baseURL+ID, fileInputName,status);
         String expectedData = JSONUtils.readJSONObjectFromFile(fileResultName);
         JSONAssert.assertEquals(expectedData, CommonClass.getAll(),false);

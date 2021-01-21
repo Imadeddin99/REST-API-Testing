@@ -23,7 +23,7 @@ public class GETTest extends CommonClass{
 
 
     @Test
-    public void test1() throws IOException, JSONException, ParseException {
+    public void getTest() throws IOException, JSONException, ParseException {
 
        String response = HandleRestWS.sendGetRequest(URLs.baseURL);
        String originalData= JSONUtils.readJSONObjectFromFile(FilesPaths.GETAllFile);

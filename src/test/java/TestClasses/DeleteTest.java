@@ -21,7 +21,7 @@ public class DeleteTest extends CommonClass {
 
 
     @Test(dataProvider = "data-provider")
-    public void test(String ID,String status,int employeeCount) throws IOException, ParseException, JSONException {
+    public void deleteTest(String ID,String status,int employeeCount) throws IOException, ParseException, JSONException {
         String response = HandleRestWS.sendDeleteRequest(URLs.baseURL+ID);
         System.out.println(response);
         JSONObject resultData = (JSONObject) JSONUtils.convertStringToJSON(response);
