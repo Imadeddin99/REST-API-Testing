@@ -2,14 +2,14 @@
 <testng-results total="18" passed="13" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-20T16:01:30Z" name="Suite1" finished-at="2021-01-20T16:01:38Z" duration-ms="7264">
+  <suite started-at="2021-01-21T09:56:06Z" name="Suite1" finished-at="2021-01-21T09:56:24Z" duration-ms="18210">
     <groups>
     </groups>
-    <test started-at="2021-01-20T16:01:37Z" name="REST API PUT Test" finished-at="2021-01-20T16:01:38Z" duration-ms="659">
+    <test started-at="2021-01-21T09:56:22Z" name="REST API PUT Test" finished-at="2021-01-21T09:56:24Z" duration-ms="2760">
       <class name="Tests.PUTTest">
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.PUTTest@2bfc268b]" started-at="2021-01-20T16:01:37Z" name="setData" finished-at="2021-01-20T16:01:37Z" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.PUTTest@be35cd9]" started-at="2021-01-21T09:56:22Z" name="clearChanges" finished-at="2021-01-21T09:56:22Z" duration-ms="454" status="PASS">
         </test-method>
-        <test-method signature="updateNameByUpdatingEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.PUTTest@2bfc268b]" started-at="2021-01-20T16:01:37Z" name="updateNameByUpdatingEmployee" finished-at="2021-01-20T16:01:37Z" duration-ms="102" status="FAIL">
+        <test-method signature="updateNameByUpdatingEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.PUTTest@be35cd9]" started-at="2021-01-21T09:56:22Z" name="updateNameByUpdatingEmployee" finished-at="2021-01-21T09:56:23Z" duration-ms="846" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -81,7 +81,7 @@ Expected: 105005
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:417)
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:394)
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:336)
-	at Tests.PUTTest.updateNameByUpdatingEmployee(PUTTest.java:35)
+	at Tests.PUTTest.updateNameByUpdatingEmployee(PUTTest.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,9 +119,9 @@ Expected: 105005
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.PUTTest@2bfc268b]" started-at="2021-01-20T16:01:37Z" name="setData" finished-at="2021-01-20T16:01:37Z" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.PUTTest@be35cd9]" started-at="2021-01-21T09:56:23Z" name="clearChanges" finished-at="2021-01-21T09:56:23Z" duration-ms="312" status="PASS">
         </test-method>
-        <test-method signature="updateNameByUpdatingEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.PUTTest@2bfc268b]" started-at="2021-01-20T16:01:37Z" name="updateNameByUpdatingEmployee" finished-at="2021-01-20T16:01:38Z" duration-ms="127" status="FAIL">
+        <test-method signature="updateNameByUpdatingEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.PUTTest@be35cd9]" started-at="2021-01-21T09:56:23Z" name="updateNameByUpdatingEmployee" finished-at="2021-01-21T09:56:24Z" duration-ms="361" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -165,7 +165,7 @@ Expected: 500
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:417)
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:394)
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:336)
-	at Tests.PUTTest.updateNameByUpdatingEmployee(PUTTest.java:35)
+	at Tests.PUTTest.updateNameByUpdatingEmployee(PUTTest.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -203,9 +203,9 @@ Expected: 500
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.PUTTest@2bfc268b]" started-at="2021-01-20T16:01:38Z" name="setData" finished-at="2021-01-20T16:01:38Z" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.PUTTest@be35cd9]" started-at="2021-01-21T09:56:24Z" name="clearChanges" finished-at="2021-01-21T09:56:24Z" duration-ms="354" status="PASS">
         </test-method>
-        <test-method signature="updateNameByUpdatingEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.PUTTest@2bfc268b]" started-at="2021-01-20T16:01:38Z" name="updateNameByUpdatingEmployee" finished-at="2021-01-20T16:01:38Z" duration-ms="107" status="PASS">
+        <test-method signature="updateNameByUpdatingEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.PUTTest@be35cd9]" started-at="2021-01-21T09:56:24Z" name="updateNameByUpdatingEmployee" finished-at="2021-01-21T09:56:24Z" duration-ms="431" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -231,11 +231,11 @@ Expected: 500
         </test-method>
       </class>
     </test>
-    <test started-at="2021-01-20T16:01:30Z" name="REST API GET Test" finished-at="2021-01-20T16:01:32Z" duration-ms="1689">
+    <test started-at="2021-01-21T09:56:06Z" name="REST API GET Test" finished-at="2021-01-21T09:56:08Z" duration-ms="2264">
       <class name="Tests.GETTest">
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.GETTest@77eca502]" started-at="2021-01-20T16:01:31Z" name="setData" finished-at="2021-01-20T16:01:31Z" duration-ms="272" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.GETTest@73ee04c8]" started-at="2021-01-21T09:56:06Z" name="clearChanges" finished-at="2021-01-21T09:56:07Z" duration-ms="390" status="PASS">
         </test-method>
-        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove(int, int, int, java.lang.String)[pri:0, instance:Tests.GETTest@77eca502]" started-at="2021-01-20T16:01:31Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-20T16:01:31Z" duration-ms="132" status="PASS">
+        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove(int, int, int, java.lang.String)[pri:0, instance:Tests.GETTest@73ee04c8]" started-at="2021-01-21T09:56:07Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-21T09:56:07Z" duration-ms="191" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -259,9 +259,9 @@ Expected: 500
             </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.GETTest@77eca502]" started-at="2021-01-20T16:01:31Z" name="setData" finished-at="2021-01-20T16:01:31Z" duration-ms="247" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.GETTest@73ee04c8]" started-at="2021-01-21T09:56:07Z" name="clearChanges" finished-at="2021-01-21T09:56:07Z" duration-ms="333" status="PASS">
         </test-method>
-        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove(int, int, int, java.lang.String)[pri:0, instance:Tests.GETTest@77eca502]" started-at="2021-01-20T16:01:31Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-20T16:01:31Z" duration-ms="125" status="PASS">
+        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove(int, int, int, java.lang.String)[pri:0, instance:Tests.GETTest@73ee04c8]" started-at="2021-01-21T09:56:07Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-21T09:56:07Z" duration-ms="162" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -285,9 +285,9 @@ Expected: 500
             </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.GETTest@77eca502]" started-at="2021-01-20T16:01:31Z" name="setData" finished-at="2021-01-20T16:01:32Z" duration-ms="515" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.GETTest@73ee04c8]" started-at="2021-01-21T09:56:07Z" name="clearChanges" finished-at="2021-01-21T09:56:08Z" duration-ms="374" status="PASS">
         </test-method>
-        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove(int, int, int, java.lang.String)[pri:0, instance:Tests.GETTest@77eca502]" started-at="2021-01-20T16:01:32Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-20T16:01:32Z" duration-ms="109" status="PASS">
+        <test-method signature="TestGETWithNumbersOutrangeOfSalariesAbove(int, int, int, java.lang.String)[pri:0, instance:Tests.GETTest@73ee04c8]" started-at="2021-01-21T09:56:08Z" name="TestGETWithNumbersOutrangeOfSalariesAbove" finished-at="2021-01-21T09:56:08Z" duration-ms="173" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -311,17 +311,17 @@ Expected: 500
             </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.GETTest@77eca502]" started-at="2021-01-20T16:01:32Z" name="setData" finished-at="2021-01-20T16:01:32Z" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.GETTest@73ee04c8]" started-at="2021-01-21T09:56:08Z" name="clearChanges" finished-at="2021-01-21T09:56:08Z" duration-ms="402" status="PASS">
         </test-method>
-        <test-method signature="test1()[pri:0, instance:Tests.GETTest@77eca502]" started-at="2021-01-20T16:01:32Z" name="test1" finished-at="2021-01-20T16:01:32Z" duration-ms="96" status="PASS">
+        <test-method signature="test1()[pri:0, instance:Tests.GETTest@73ee04c8]" started-at="2021-01-21T09:56:08Z" name="test1" finished-at="2021-01-21T09:56:08Z" duration-ms="229" status="PASS">
         </test-method>
       </class>
     </test>
-    <test started-at="2021-01-20T16:01:32Z" name="REST API DELETE Test" finished-at="2021-01-20T16:01:35Z" duration-ms="3127">
+    <test started-at="2021-01-21T09:56:08Z" name="REST API DELETE Test" finished-at="2021-01-21T09:56:15Z" duration-ms="6605">
       <class name="Tests.DeleteTest">
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.DeleteTest@79da8dc5]" started-at="2021-01-20T16:01:32Z" name="setData" finished-at="2021-01-20T16:01:34Z" duration-ms="1297" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.DeleteTest@5fd4f8f5]" started-at="2021-01-21T09:56:08Z" name="clearChanges" finished-at="2021-01-21T09:56:09Z" duration-ms="374" status="PASS">
         </test-method>
-        <test-method signature="test(java.lang.String, java.lang.String, int)[pri:0, instance:Tests.DeleteTest@79da8dc5]" started-at="2021-01-20T16:01:34Z" name="test" finished-at="2021-01-20T16:01:34Z" duration-ms="392" status="PASS">
+        <test-method signature="test(java.lang.String, java.lang.String, int)[pri:0, instance:Tests.DeleteTest@5fd4f8f5]" started-at="2021-01-21T09:56:09Z" name="test" finished-at="2021-01-21T09:56:10Z" duration-ms="810" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -340,9 +340,9 @@ Expected: 500
             </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.DeleteTest@79da8dc5]" started-at="2021-01-20T16:01:34Z" name="setData" finished-at="2021-01-20T16:01:34Z" duration-ms="139" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.DeleteTest@5fd4f8f5]" started-at="2021-01-21T09:56:10Z" name="clearChanges" finished-at="2021-01-21T09:56:11Z" duration-ms="1411" status="PASS">
         </test-method>
-        <test-method signature="test(java.lang.String, java.lang.String, int)[pri:0, instance:Tests.DeleteTest@79da8dc5]" started-at="2021-01-20T16:01:34Z" name="test" finished-at="2021-01-20T16:01:35Z" duration-ms="514" status="PASS">
+        <test-method signature="test(java.lang.String, java.lang.String, int)[pri:0, instance:Tests.DeleteTest@5fd4f8f5]" started-at="2021-01-21T09:56:11Z" name="test" finished-at="2021-01-21T09:56:13Z" duration-ms="1788" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -361,9 +361,9 @@ Expected: 500
             </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.DeleteTest@79da8dc5]" started-at="2021-01-20T16:01:35Z" name="setData" finished-at="2021-01-20T16:01:35Z" duration-ms="78" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.DeleteTest@5fd4f8f5]" started-at="2021-01-21T09:56:13Z" name="clearChanges" finished-at="2021-01-21T09:56:13Z" duration-ms="338" status="PASS">
         </test-method>
-        <test-method signature="test(java.lang.String, java.lang.String, int)[pri:0, instance:Tests.DeleteTest@79da8dc5]" started-at="2021-01-20T16:01:35Z" name="test" finished-at="2021-01-20T16:01:35Z" duration-ms="238" status="PASS">
+        <test-method signature="test(java.lang.String, java.lang.String, int)[pri:0, instance:Tests.DeleteTest@5fd4f8f5]" started-at="2021-01-21T09:56:13Z" name="test" finished-at="2021-01-21T09:56:14Z" duration-ms="694" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -382,9 +382,9 @@ Expected: 500
             </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.DeleteTest@79da8dc5]" started-at="2021-01-20T16:01:35Z" name="setData" finished-at="2021-01-20T16:01:35Z" duration-ms="121" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.DeleteTest@5fd4f8f5]" started-at="2021-01-21T09:56:14Z" name="clearChanges" finished-at="2021-01-21T09:56:14Z" duration-ms="421" status="PASS">
         </test-method>
-        <test-method signature="test(java.lang.String, java.lang.String, int)[pri:0, instance:Tests.DeleteTest@79da8dc5]" started-at="2021-01-20T16:01:35Z" name="test" finished-at="2021-01-20T16:01:35Z" duration-ms="347" status="PASS">
+        <test-method signature="test(java.lang.String, java.lang.String, int)[pri:0, instance:Tests.DeleteTest@5fd4f8f5]" started-at="2021-01-21T09:56:14Z" name="test" finished-at="2021-01-21T09:56:15Z" duration-ms="768" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -405,11 +405,11 @@ Expected: 500
         </test-method>
       </class>
     </test>
-    <test started-at="2021-01-20T16:01:35Z" name="REST API POST Test" finished-at="2021-01-20T16:01:37Z" duration-ms="1745">
+    <test started-at="2021-01-21T09:56:15Z" name="REST API POST Test" finished-at="2021-01-21T09:56:22Z" duration-ms="6523">
       <class name="Tests.POSTTest">
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:35Z" name="setData" finished-at="2021-01-20T16:01:36Z" duration-ms="165" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:15Z" name="clearChanges" finished-at="2021-01-21T09:56:15Z" duration-ms="375" status="PASS">
         </test-method>
-        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:36Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T16:01:36Z" duration-ms="203" status="PASS">
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:15Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-21T09:56:16Z" duration-ms="431" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -443,9 +443,9 @@ Expected: 500
             </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:36Z" name="setData" finished-at="2021-01-20T16:01:36Z" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:16Z" name="clearChanges" finished-at="2021-01-21T09:56:16Z" duration-ms="488" status="PASS">
         </test-method>
-        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:36Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T16:01:36Z" duration-ms="108" status="PASS">
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:16Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-21T09:56:17Z" duration-ms="438" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -479,9 +479,9 @@ Expected: 500
             </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:36Z" name="setData" finished-at="2021-01-20T16:01:36Z" duration-ms="102" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:17Z" name="clearChanges" finished-at="2021-01-21T09:56:17Z" duration-ms="407" status="PASS">
         </test-method>
-        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:36Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T16:01:36Z" duration-ms="150" status="PASS">
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:17Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-21T09:56:18Z" duration-ms="412" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -515,9 +515,9 @@ Expected: 500
             </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:36Z" name="setData" finished-at="2021-01-20T16:01:36Z" duration-ms="137" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:18Z" name="clearChanges" finished-at="2021-01-21T09:56:18Z" duration-ms="432" status="PASS">
         </test-method>
-        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:36Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T16:01:36Z" duration-ms="73" status="FAIL">
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:18Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-21T09:56:18Z" duration-ms="206" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -561,7 +561,7 @@ Expected: 500
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:171)
 	at org.testng.Assert.assertEquals(Assert.java:181)
-	at Tests.POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:37)
+	at Tests.POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -599,9 +599,9 @@ Expected: 500
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:36Z" name="setData" finished-at="2021-01-20T16:01:37Z" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:18Z" name="clearChanges" finished-at="2021-01-21T09:56:19Z" duration-ms="408" status="PASS">
         </test-method>
-        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:37Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T16:01:37Z" duration-ms="81" status="FAIL">
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:19Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-21T09:56:20Z" duration-ms="1199" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -645,7 +645,7 @@ Expected: 500
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:171)
 	at org.testng.Assert.assertEquals(Assert.java:181)
-	at Tests.POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:37)
+	at Tests.POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -683,9 +683,9 @@ Expected: 500
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:37Z" name="setData" finished-at="2021-01-20T16:01:37Z" duration-ms="113" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:20Z" name="clearChanges" finished-at="2021-01-21T09:56:20Z" duration-ms="459" status="PASS">
         </test-method>
-        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:37Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T16:01:37Z" duration-ms="121" status="FAIL">
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:20Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-21T09:56:21Z" duration-ms="458" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -729,7 +729,7 @@ Expected: 500
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:365)
 	at org.testng.Assert.assertEquals(Assert.java:375)
-	at Tests.POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:41)
+	at Tests.POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -767,9 +767,9 @@ Expected: 500
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="setData()[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:37Z" name="setData" finished-at="2021-01-20T16:01:37Z" duration-ms="101" status="PASS">
+        <test-method is-config="true" signature="clearChanges()[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:21Z" name="clearChanges" finished-at="2021-01-21T09:56:21Z" duration-ms="408" status="PASS">
         </test-method>
-        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@5fd4f8f5]" started-at="2021-01-20T16:01:37Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-20T16:01:37Z" duration-ms="123" status="PASS">
+        <test-method signature="addManyEmployeesRepeatedIDTest(java.lang.String, java.lang.String, int, int, int, int)[pri:0, instance:Tests.POSTTest@2bfc268b]" started-at="2021-01-21T09:56:21Z" name="addManyEmployeesRepeatedIDTest" finished-at="2021-01-21T09:56:22Z" duration-ms="395" status="PASS">
           <params>
             <param index="0">
               <value>

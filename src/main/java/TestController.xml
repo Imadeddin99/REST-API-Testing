@@ -3,24 +3,24 @@
 <suite name="Suite1" verbose="1" >
     <test name="REST API GET Test" >
         <classes>
-            <class name="Tests.GETTest"/>
+            <class name="TestClasses.GETTest"/>
         </classes>
     </test>
 
     <test name="REST API DELETE Test" >
         <classes>
-            <class name="Tests.DeleteTest"/>
+            <class name="TestClasses.DeleteTest"/>
         </classes>
     </test>
 
     <test name="REST API POST Test" >
         <classes>
-            <class name="Tests.POSTTest"/>
+            <class name="TestClasses.POSTTest"/>
         </classes>
     </test>
     <test name="REST API PUT Test" >
         <classes>
-            <class name="Tests.PUTTest"/>
+            <class name="TestClasses.PUTTest"/>
         </classes>
     </test>
 </suite>

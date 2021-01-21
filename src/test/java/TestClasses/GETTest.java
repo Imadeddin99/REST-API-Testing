@@ -1,31 +1,26 @@
-package Tests;
+package TestClasses;
 
 import Utils.JSONUtils;
 import org.json.JSONException;
-import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 import org.skyscreamer.jsonassert.JSONAssert;
-import org.json.simple.parser.JSONParser;
 import org.testng.annotations.*;
 
 import java.io.*;
 import Links.*;
-import requestHandling.CommonClass;
+import Core.CommonClass;
 import requestHandling.HandleRestWS;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;
 
-public class GETTest {
+public class GETTest extends CommonClass{
     //getting the original Data
 
 
 
 
-    @BeforeMethod
-    public void setData() throws IOException, ParseException {
-        CommonClass.clearChanges();
-    }
+
 
     @Test
     public void test1() throws IOException, JSONException, ParseException {

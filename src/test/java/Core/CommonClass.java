@@ -1,8 +1,10 @@
-package requestHandling;
+package Core;
 
 import Links.FilesPaths;
 import Links.URLs;
 import org.json.simple.parser.ParseException;
+import org.testng.annotations.BeforeMethod;
+import requestHandling.HandleRestWS;
 
 import java.io.*;
 
@@ -63,7 +65,8 @@ public class CommonClass {
      * description: This function is used to clear the Data and insert the original Test Data again.
      * This is void function ;returns nothing.
      */
-    public static void clearChanges() throws IOException, ParseException {
+    @BeforeMethod
+    public void clearChanges() throws IOException, ParseException {
         deleteAll();
         postAll();
 }

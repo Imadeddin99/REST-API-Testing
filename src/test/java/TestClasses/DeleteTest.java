@@ -1,4 +1,4 @@
-package Tests;
+package TestClasses;
 
 import Links.URLs;
 import Utils.JSONUtils;
@@ -6,25 +6,17 @@ import enums.ResponseFields;
 import enums.ResponseStatus;
 import org.json.JSONException;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.*;
-import requestHandling.CommonClass;
+import Core.CommonClass;
 import requestHandling.HandleRestWS;
 
 import java.io.IOException;
-import java.util.Locale;
 
 import static org.testng.Assert.assertEquals;
 
-public class DeleteTest {
+public class DeleteTest extends CommonClass {
     //testing delete with ID
-
-    @BeforeMethod
-    public void setData() throws IOException, ParseException {
-        CommonClass.clearChanges();
-    }
-
 
 
 

@@ -1,35 +1,35 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 8.338 sec <<< FAILURE!
-addManyEmployeesRepeatedIDTest(Tests.POSTTest)  Time elapsed: 0.076 sec  <<< FAILURE!
+Tests run: 18, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 19.494 sec <<< FAILURE!
+addManyEmployeesRepeatedIDTest(Tests.POSTTest)  Time elapsed: 0.211 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<ERROR> but was:<SUCCESS>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:171)
 	at org.testng.Assert.assertEquals(Assert.java:181)
-	at Tests.POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:37)
+	at Tests.POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:32)
 
-addManyEmployeesRepeatedIDTest(Tests.POSTTest)  Time elapsed: 0.081 sec  <<< FAILURE!
+addManyEmployeesRepeatedIDTest(Tests.POSTTest)  Time elapsed: 1.2 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<ERROR> but was:<SUCCESS>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:171)
 	at org.testng.Assert.assertEquals(Assert.java:181)
-	at Tests.POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:37)
+	at Tests.POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:32)
 
-addManyEmployeesRepeatedIDTest(Tests.POSTTest)  Time elapsed: 0.121 sec  <<< FAILURE!
+addManyEmployeesRepeatedIDTest(Tests.POSTTest)  Time elapsed: 0.459 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<50000> but was:<10000>
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:365)
 	at org.testng.Assert.assertEquals(Assert.java:375)
-	at Tests.POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:41)
+	at Tests.POSTTest.addManyEmployeesRepeatedIDTest(POSTTest.java:36)
 
-updateNameByUpdatingEmployee(Tests.PUTTest)  Time elapsed: 0.103 sec  <<< FAILURE!
+updateNameByUpdatingEmployee(Tests.PUTTest)  Time elapsed: 0.847 sec  <<< FAILURE!
 java.lang.AssertionError: items[firstName=Pascsssal].id
 Expected: 438745745094
      got: 438768422146
@@ -54,9 +54,9 @@ Expected: 105005
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:417)
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:394)
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:336)
-	at Tests.PUTTest.updateNameByUpdatingEmployee(PUTTest.java:35)
+	at Tests.PUTTest.updateNameByUpdatingEmployee(PUTTest.java:30)
 
-updateNameByUpdatingEmployee(Tests.PUTTest)  Time elapsed: 0.127 sec  <<< FAILURE!
+updateNameByUpdatingEmployee(Tests.PUTTest)  Time elapsed: 0.362 sec  <<< FAILURE!
 java.lang.AssertionError: items[firstName=Test].salary
 Expected: 500
      got: 250
@@ -67,5 +67,5 @@ Expected: 500
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:417)
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:394)
 	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:336)
-	at Tests.PUTTest.updateNameByUpdatingEmployee(PUTTest.java:35)
+	at Tests.PUTTest.updateNameByUpdatingEmployee(PUTTest.java:30)
 

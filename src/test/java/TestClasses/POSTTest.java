@@ -1,4 +1,4 @@
-package Tests;
+package TestClasses;
 
 import Links.FilesPaths;
 import Links.URLs;
@@ -9,21 +9,16 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.*;
-import requestHandling.CommonClass;
+import Core.CommonClass;
 import requestHandling.HandleRestWS;
 
 import java.io.*;
-import java.util.Locale;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;
 
-public class POSTTest {
+public class POSTTest extends CommonClass{
 
-    @BeforeMethod
-    public void setData() throws IOException, ParseException {
-      CommonClass.clearChanges();
-    }
 
 
     @Test(dataProvider = "data-provider")
